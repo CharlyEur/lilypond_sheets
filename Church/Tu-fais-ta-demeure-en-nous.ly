@@ -1,6 +1,11 @@
 \version "2.18.2"
 \language "italiano"
 
+\paper{
+  head-separation = 20.0 \cm
+  make-footer=##f
+}
+
 \header {
   title = "Tu fais ta demeure en nous"
 }
@@ -98,9 +103,13 @@ bassoon = \relative do {
   mi1
 }
 
-flutePart = \new Staff \flute
+flutePart = \new Staff \with {
+  midiInstrument=flute
+} \flute
 
-oboePart = \new Staff \oboe
+oboePart = \new Staff \with {
+  midiInstrument = oboe
+} \oboe
 
 trombonePart = \new Staff { \clef bass \trombone }
 

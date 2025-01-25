@@ -133,19 +133,20 @@ trombonePart = \new Staff \with {
   midiInstrument = "trombone"
 } { \clef bass \trombone }
 
-\score {
-  <<
-    \flutePart
-    \oboePart
-    \bassoonPart
-    \trombonePart
-  >>
-  \layout {
-    \context{
-      \Staff
+  \score {
+    <<
+      \flutePart
+      \oboePart
+      \bassoonPart
+      \trombonePart
+    >>
+    \layout {
+      \context{
+        \Staff
+        \override BreathingSign.text = \markup { \musicglyph "comma" }
+      }
+    }
+    \midi {
+      \tempo 4=88
     }
   }
-  \midi {
-    \tempo 4=88
-  }
-}

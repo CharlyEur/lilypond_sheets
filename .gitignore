@@ -1,2 +1,5 @@
 # Lilypond Output
 **/*.pdf
+
+# Midi generated files
+**/*.mid

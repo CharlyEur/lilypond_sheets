@@ -18,6 +18,7 @@ Anne-Marie Hue
 
 ## Prière universelle
 Toi qui es bon et qui pardonne
+Partitions OK
 
 ## Offertoire
 Tu fais ta demeure en nous Seigneur
@@ -37,11 +38,14 @@ Notre Dieu s'est fait homme
 
 ## Communion 2 (au cas où)
 Maintenant, Seigneur
+Partitions OK
 
 ## Envoi
 
 Je vous salue Marie (Angélus)
+Partitions OK
 
 ## Sortie
 
 Allez, par toute la Terre
+Partitions OK

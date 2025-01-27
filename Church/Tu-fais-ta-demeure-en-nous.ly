@@ -15,7 +15,7 @@ global = {
   \time 4/4
 }
 
-flute = \relative do' {
+flute = \relative do'' {
   \global
 mi8 mi mi mi sol sol fad re
 si1
@@ -40,7 +40,7 @@ mi1
 \bar "|."
 }
 
-oboe = \relative do' {
+oboe = \relative do'' {
   \global
 si4 si si do8 la
 si4 si do la
@@ -104,16 +104,24 @@ bassoon = \relative do {
 }
 
 flutePart = \new Staff \with {
-  midiInstrument=flute
+  instrumentName = "Flute"
+  midiInstrument = flute
 } \flute
 
 oboePart = \new Staff \with {
+  instrumentName = "Hautbois"
   midiInstrument = oboe
-} \oboe
+} { \oboe }
 
-trombonePart = \new Staff { \clef bass \trombone }
+trombonePart = \new Staff \with {
+  instrumentName = "Trombone"
+  midiInstrument = "trombone"
+} { \clef bass \trombone }
 
-bassoonPart = \new Staff { \clef bass \bassoon }
+bassoonPart = \new Staff \with {
+  instrumentName = "Basson"
+  midiInstrument = "bassoon"
+} { \clef bass \bassoon }
 
 \score {
   <<

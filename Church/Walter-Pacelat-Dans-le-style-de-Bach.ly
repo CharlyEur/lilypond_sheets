@@ -6,7 +6,6 @@
   subtitle = "Offertoire des professions de foi 2024"
   composer = "Walter Pacelat"
   arranger = "Dominique Hollebeke"
-  meter = "4/4"
 }
 
 global = {

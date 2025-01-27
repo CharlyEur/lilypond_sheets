@@ -29,12 +29,14 @@ Messe Pro Europa
 
 ## Notre-Père
 Rimsky Korsakoff
+Partitions OK
 
 ## Agnus
 Messe Pro Europa
 
 ## Communion
 Notre Dieu s'est fait homme
+Partitions OK
 
 ## Communion 2 (au cas où)
 Maintenant, Seigneur

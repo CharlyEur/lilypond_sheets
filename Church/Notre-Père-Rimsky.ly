@@ -18,15 +18,15 @@ sopranoR = \new Staff \with {
     \global
     la8 la la4 la8 \breathe
     la8 sol fa sol2 \breathe
-    sol8 sol sol sol sol sol sol2 \breathe
+    sol8 sol sol sol sol sol sol2 \breathe \break
     sol8 sol la4. la8 la4( sol) fa2 \breathe
-    fa8 fa fa fa fa fa sol4 sol sol8 sol sol sol la la sib2 \breathe
+    fa8 fa fa fa fa fa sol4 sol sol8 sol sol sol la la sib2 \breathe \break
     sib8 sib sib sib sib sib sib sib sol sol sol la2 \breathe
-    la8 la sol fa fa fa sol4 sol8 \breathe
+    la8 la sol fa fa fa sol4 sol8 \breathe \break \pageBreak
     sol8 sol sol sol sol fa sol4 \breathe
-    sol8 la la la la la sol fa4 r8
+    sol8 la la la la la sol fa4 r8 
     fa8 fa fa fa fa sol4. sol8 sol sol la la sib4 \breathe
-    sib8 sib sib sib sol sol la2 \breathe
+    sib8 sib sib sib sol sol la2 \breathe \break
     la8 la sol fa fa fa sol4 sol \breathe
     sol8 sol sol sol sol la la la sib4 sib \breathe
     sib8 sib sib sib sib sol sol sol4 la \fermata
@@ -64,6 +64,20 @@ tenorR = \new Staff \with {
   \clef bass
   \relative do' {
     \global
+    do8 do do4 do8 \breathe
+    fa,8 sol la do2 \breathe
+    do8 do do do do do do2 \breathe
+    do8 do do4. do8 do2 la2 \breathe
+    la8 la la la la la do4 do do8 do do do do do re2 \breathe
+    re8 re re re re re re re do do do do2 \breathe
+    fa,8 fa sol la la la do4 do8 \breathe
+    do8 do do do do la do4 \breathe
+    do8 do do do do do do la4 r8
+    la8 la la la la do4. do8 do do do do re4 \breathe
+    re8 re re re do do do2 \breathe
+    fa,8 fa sol la la la do4 do \breathe
+    do8 do do do do do do do re4 re \breathe
+    re8 re re re re do do do4 do \fermata 
   }
 }
 
@@ -100,18 +114,19 @@ bassR = \new Staff \with {
   }
   
   \score {
-    <<
+    \new StaffGroup <<
       \sopranoR
       \altoR
       \tenorR
       \bassR
     >>
     \layout { 
-      indent = 2\cm
+      indent = 2\cm   
+      \override Score.BarLine.color = ##t
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
       \tempo 4=60
     }
-  }  
+  }
 }

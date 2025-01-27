@@ -3,6 +3,7 @@
 
 \header {
   title = "Alleluia"
+  subtitle = "Lumière des nations"
 }
 
 global = {

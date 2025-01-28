@@ -17,23 +17,17 @@ soliste = \relative do'' {
   do4 do la2
   fa4 fa sol sol
   la4 la re,2
-  
-  \break
-  
+    
   la'4 la re re
   do4 do la2
   fa4 fa sol sol
   la4 la re,2
-  
-  \pageBreak
-  
+    
   sib'2 la
   sib4 ( sol) la2
   sib2 la4 fa
   sol4 sol la2
-  
-  \break
-  
+    
   sib2 la
   sib4 ( sol) la2
   sib2 la4 fa
@@ -48,23 +42,17 @@ soprano = \relative do'' {
   sol2 la
   fa2 sol
   la2 fa
-  
-  \break
-  
+    
   la4 la re re
   mi4 mi fa2
   re4 re re mi
   re4 dod re2
-  
-  \break
-  
+    
   sib2 la
   sib4 ( sol) la2
   sib2 la2
   re2 dod
-  
-  \break
-  
+    
   re2 re
   fa4 ( mi) re2
   re4 mi fa fa
@@ -77,23 +65,17 @@ alto = \relative do' {
   sol2 fa
   fa2 sol
   mi2 re
-  
-  \break
-  
+    
   fa4 fa sib la
   sol4 sol la2
   fa4 fa sol sol
   la4 la la2
-  
-  \break
-  
+    
   sol2 fa
   sol4 ( mi) fa2
   sol2 fa
   sol2 la
-  
-  \break
-  
+    
   sib2 la
   sib2 la
   sib2 la4 la
@@ -106,23 +88,17 @@ tenor = \relative do {
   mi2 do
   re1
   dod2 re
-  
-  \break
-  
+    
   re4 re fa fa
   sol4 sol la2
   fa4 fa fa sol
   fa4 mid fa2
-  
-  \break
-  
+    
   re2 re
   re2 re2
   re2 re4 do
   re2 mi
-  
-  \break
-  
+    
   sol2 fa
   sol2 fa
   sol2 fa4 fa
@@ -135,23 +111,17 @@ bass = \relative do {
   do2 fa,
   sib1
   la2 re
-  
-  \break
-  
+    
   re4 re sib sib
   do4 do fa,2
   sib4 sib sib sib
   la4 la re2
-  
-  \break
-  
+    
   sol,2 re'
   sol,2 re'
   sol,2 re'4 do
   sib2 la
-  
-  \break
-  
+    
   sol2 re'
   sol,2 re'
   sol,2 re'4 do

@@ -1,6 +1,11 @@
 \version "2.22.1"
 \language "italiano"
 
+% logique :
+% - Trompette : soprano (Tp en sib)
+% - Flûte 2 : alto
+% - Sax Alto : tenor (Sax en mib)
+
 \header {
   title = "Alleluia"
   subtitle = "Messe du Grand Jubilé"
@@ -13,8 +18,8 @@ global = {
 }
 
 sopranoR = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
+  instrumentName = "Trompette"
+  midiInstrument = "trumpet"
 } {
   \relative do'' {
     \global
@@ -33,8 +38,8 @@ sopranoR = \new Staff \with {
 }
 
 altoR = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "choir aahs"
+  instrumentName = "Flûte 2"
+  midiInstrument = "flute"
 } {
   \relative do' {
     \global
@@ -52,10 +57,9 @@ altoR = \new Staff \with {
 }
 
 tenorR = \new Staff \with {
-  instrumentName = "Tenor"
+  instrumentName = "Sax alto"
   midiInstrument = "choir aahs"
 } {
-  \clef bass
     \relative do' {
     \global
     do8 sib do lab sib4 do
@@ -121,33 +125,11 @@ contrechant = \new Staff \with {
   
   \score {
     \new StaffGroup <<
-      \sopranoR
+      \transpose sib do' { \sopranoR }
       \altoR
-      \tenorR
+      \transpose mib do' { \tenorR }
       \bassR
     >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
-    }
-  }
-  
-  \score {
-    \contrechant
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
-    }
-  }
-  
-  \score {
-    \transpose do sib, { \contrechant }
     \layout { 
       indent = 2\cm
       \override BreathingSign.text = \markup { \musicglyph "comma" }

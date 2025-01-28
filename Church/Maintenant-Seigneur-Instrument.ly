@@ -103,30 +103,20 @@ couplet = \relative do' {
 }
 
 sopranoVoicePart = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
+  instrumentName = "Trompette"
 } { \sopranoRefrain }
 
 altoVoicePart = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "choir aahs"
+  instrumentName = "Flûte 2"
 } { \altoRefrain }
 
 tenorVoicePart = \new Staff \with {
-  instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
-} { \clef bass \tenorRefrain }
+  instrumentName = "Sax Alto"
+} { \tenorRefrain }
 
 bassVoicePart = \new Staff \with {
-  instrumentName = "Basse"
-  midiInstrument = "choir aahs"
+  instrumentName = "Basson"
 } { \clef bass \bassRefrain }
-
-
-coupletPart = \new Staff \with {
-  instrumentName = "Couplet"
-  midiInstrument = "choir aahs"
-} { \couplet }
 
 \book{
   \paper {
@@ -138,22 +128,15 @@ coupletPart = \new Staff \with {
   
   \score {
     <<
-      \sopranoVoicePart
+      \transpose sib do \sopranoVoicePart
       \altoVoicePart
-      \tenorVoicePart
+      \transpose mib do' \tenorVoicePart
       \bassVoicePart
     >>
     \layout { 
       indent = 2\cm
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
-    \midi {
-      \tempo 4=80
-    }
-  }
-  \score{
-    \coupletPart
-    \layout { }
     \midi {
       \tempo 4=80
     }

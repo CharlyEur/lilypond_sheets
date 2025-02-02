@@ -68,17 +68,17 @@ bassoon = \relative do {
   r4 mi8 ( red) mi4 sol ~ |
   sol4 fad8 mi fad4 si,4 ~ |
   si \breathe mi8 red mi2 ~ |
-  mi4 do8 si do4 \breathe mi |
-  mi4 mi8 re mi4 fad ~|
-  fad4 fad8( mi ) fad2 |
+  mi4 do8 si do4 \breathe si |
+  la2. la4 |
+  si2 fad'2 |
   sol4 la si8( do si la |
-  sol4.) r8 r8 sol' mi re |
-  do8 si do4 ~ do8 mi fad sol |
-  la sol la4. la,8si do
-  do4 si8( la) si( re sol fad) |
+  sol4.) r8 r8 sol ( mi re ) |
+  do8 ( si ) do4 ~ do8 mi ( fad sol ) |
+  la ( sol ) la4. la8 ( si do )
+  do4 si8( la) si( re, sol fad) |
   sol2 ~ sol8 mi do si |
-  la8 mi do'4 ~ do8 si la sol |
-  fad8 do la'4 ~la8 sol fad mi |
+  la8 ( mi' ) do'4 ~ do8 si ( la sol ) |
+  fad8 ( do) la'4 ~la8 \breathe sol ( fad mi) |
   red8( mi fad sol la do si la) |
   sol8( si la sol) \acciaccatura sol fad4.( \startTrillSpan mi8 )\stopTrillSpan |
   mi4 mi8( red) mi2 ~ |
@@ -93,11 +93,11 @@ trombone = \relative do {
   mi2. mi4 |
   red2. red4 |
   mi2. \breathe re4 |
-  do2. si4 |
-  la2. fad4 |
-  si2. \breathe red4 |
-  mi4 la si si, |
-  mi2. \breathe sol4 |
+  do2. mi4 ~ |
+  mi4 mi8 re mi4 fad ~ |
+  fad4 fad8 mi fad4 red \breathe |
+  mi4 la si si |
+  mi,2. \breathe sol4 |
   la2. sol4 |
   fad2. \breathe re4 |
   sol2. fad4 |
@@ -105,8 +105,8 @@ trombone = \relative do {
   do2. si4 |
   la2. \breathe la4 |
   si2. red4 |
-  mi4 la, si si |
-  mi,2. \breathe mi'4 |
+  mi4 la si si |
+  mi,2. \breathe mi4 |
   mi2. mi4 |
   mi2. \breathe mi4 |
   mi1 \fermata
@@ -132,6 +132,14 @@ trombonePart = \new Staff \with {
   midiInstrument = "trombone"
 } { \clef bass \trombone }
 
+\book{
+  \paper {
+    left-margin = 20\mm
+    right-margin = 20\mm
+    top-margin = 20\mm
+    bottom-margin = 20\mm
+  }
+
   \score {
     <<
       \flutePart
@@ -149,3 +157,4 @@ trombonePart = \new Staff \with {
       \tempo 4=88
     }
   }
+}

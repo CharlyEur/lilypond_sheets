@@ -123,15 +123,25 @@ bassoonPart = \new Staff \with {
   midiInstrument = "bassoon"
 } { \clef bass \bassoon }
 
-\score {
-  <<
-    \flutePart
-    \oboePart
-    \trombonePart
-    \bassoonPart
-  >>
-  \layout { }
-  \midi {
-    \tempo 4=100
+\book{
+  
+  \paper {
+    left-margin = 20\mm
+    right-margin = 20\mm
+    top-margin = 20\mm
+    bottom-margin = 20\mm
+  }
+
+  \score {
+    <<
+      \flutePart
+      \oboePart
+      \trombonePart
+      \bassoonPart
+    >>
+    \layout { }
+    \midi {
+      \tempo 4=100
+    }
   }
 }

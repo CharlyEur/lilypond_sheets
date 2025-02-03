@@ -102,9 +102,9 @@ trombone = \relative do {
   fad2. \breathe re4 |
   sol2. fad4 |
   mi2. \breathe re4 |
-  do2. si4 |
+  do2. sol'4 |
   la2. \breathe la4 |
-  si2. red4 |
+  si2. red,4 |
   mi4 la si si |
   mi,2. \breathe mi4 |
   mi2. mi4 |

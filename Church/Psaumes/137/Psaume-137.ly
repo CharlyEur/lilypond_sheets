@@ -2,17 +2,12 @@
 \language "italiano"
 
 \header {
-  title = "Allez par toute la Terre"
-  subtitle = "Pour l'abbaye de Maredsous"
-  composer = "Joseph Berthier"
+  title = "Psaume 23"
+  subtitle = "Je te chante, Seigneur"
+  composer = "Thomas Ospital"
 }
 
 \include "Music.ly"
-
-global = {
-  \key sol \minor
-  \time 6/8
-}
 
 sopranoR = \new Staff \with {
   instrumentName = "Soprano"
@@ -27,23 +22,14 @@ altoR = \new Staff \with {
 tenorR = \new Staff \with {
   instrumentName = "Tenor"
   midiInstrument = "choir aahs"
-} {
-  \clef bass \tenorChorus
-}
+} { \clef bass \tenorChorus }
 
 bassR = \new Staff \with {
   instrumentName = "Basse"
   midiInstrument = "choir aahs"
-} {
-  \clef bass \bassChorus
-}
+} { \clef bass \bassChorus }
 
 %-------------------- couplet -------------------
-
-solisteC = \new Staff \with {
-  instrumentName = "Soliste"
-  midiInstrument = "choir aahs"
-} { \solisteVerse }
 
 sopranoC = \new Staff \with {
   instrumentName = "Soprano"
@@ -91,7 +77,6 @@ bassC = \new Staff \with {
   
   \score{
     <<
-      \solisteC
       \sopranoC
       \altoC
       \tenorC

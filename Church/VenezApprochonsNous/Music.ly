@@ -1,20 +1,9 @@
-\version "2.22.1"
-\language "italiano"
-
-\header {
-  title = "Venez, approchons-nous"
-  subtitle = "de la table du Christ"  
-}
-
 global = {
   \key mi \minor
   \time 6/8
 }
 
-sopranoR = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "flute"
-} {
+sopranoTrack =
   \relative do' {
     \global
     \mark \markup {"Refrain"}
@@ -39,12 +28,8 @@ sopranoR = \new Staff \with {
     la8 la fad si4.
     \bar "||"
   }
-}
 
-altoR = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "oboe"
-} {
+altoTrack =
   \relative do' {
     \global
     \partial 8 si8
@@ -67,14 +52,9 @@ altoR = \new Staff \with {
     fad8 mi mi mi4 mi16 mi
     mi8 dod mi red4.
   }
-}
 
-tenorR = \new Staff \with {
-  instrumentName = "Tenor"
-  midiInstrument = "english horn"
-} {
+tenorTrack = 
   \relative do' {
-    \clef bass 
     \global
     \partial 8 si8
     sol8. fad16 sol la do8 do do
@@ -96,14 +76,9 @@ tenorR = \new Staff \with {
     si8 si re re ( do ) do16 si
     la8 la la fad4.
   }
-}
 
-bassR = \new Staff \with {
-  instrumentName = "Basse"
-  midiInstrument = "bassoon"
-} {
+bassTrack =
   \relative do {
-    \clef bass 
     \global
     \partial 8 si8
     mi8. mi16 mi mi do8 do do
@@ -125,29 +100,3 @@ bassR = \new Staff \with {
     mi8 mi mi do!4 do16 do
     fad8 fad mi si4.
   }
-}
-
-\book{
-  \paper {
-    left-margin = 20\mm
-    right-margin = 20\mm
-    top-margin = 20\mm
-    bottom-margin = 20\mm
-  }
-  
-  \score {
-    <<
-      \sopranoR
-      \altoR
-      \tenorR
-      \bassR
-    >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=116
-    }
-  }
-}

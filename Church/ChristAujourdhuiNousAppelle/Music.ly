@@ -1,23 +1,11 @@
-\version "2.22.1"
-\language "italiano"
-
-\header {
-  title = "Christ aujourd'hui nous appelle"
-  composer = "Michel Wackenheim"
-  poet = "Claude Bernard"
-}
-
 global = {
   \key sib \major
   \time 4/4
 }
 
-sopranoR = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
-} {
+sopranoTrack =
   \relative do' {
-    \global
+    \global \mark \markup {"Refrain"}
     re4 re8 mib fa4 sol8 fa
     fa4. mib8 re2
     sib'4 sib8 la sol4 la8 sib
@@ -27,7 +15,7 @@ sopranoR = \new Staff \with {
     sib4. la8 sol4 la8 sib
     do2 r4 re8 do
     sib2 sib4 la
-    sib2 r4 \bar "||" re,8 re
+    sib2 r4 \bar "||" \mark \markup {"Couplet"} re,8 re
     sol4 sol8 la sib sib la sol
     la2 r4 re8 do
     sib4 sib8 la sol sol la sib
@@ -38,14 +26,10 @@ sopranoR = \new Staff \with {
     do1    
     \bar "|."
   }
-}
 
-altoR = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "choir aahs"
-} {
+altoTrack =
   \relative do' {
-    \global \mark \markup {"Refrain"}
+    \global
     sib4 sib8 do re4 re8 re
     do2 sib2
     re4 re8 re re4 mib8 mib
@@ -55,7 +39,7 @@ altoR = \new Staff \with {
     re4. re8 re4 re8 re
     mib2 r4 re8 re
     re4 ( sol ) mib4 mib
-    re2 r4 \bar "||" \mark \markup {"Couplet"}
+    re2 r4
     re8 re
     re4 re8 re re re re re
     fad2 r4 fad8 fad
@@ -67,14 +51,9 @@ altoR = \new Staff \with {
     la1    
     \bar "|."
   }
-}
 
-tenorR = \new Staff \with {
-  instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
-} {
+tenorTrack =
   \relative do {
-    \clef bass 
     \global
     fa4 fa8 fa sib4 sib8 sib
     do2 fa,2
@@ -96,14 +75,9 @@ tenorR = \new Staff \with {
     la1
     \bar "|."
   }
-}
 
-bassR = \new Staff \with {
-  instrumentName = "Basse"
-  midiInstrument = "choir aahs"
-} {
+bassTrack =
   \relative do {
-    \clef bass 
     \global
     sib4 sib8 sib sib4 sib8 sib
     la2 sib2
@@ -125,29 +99,3 @@ bassR = \new Staff \with {
     fa1
     \bar "|."
   }
-}
-
-\book{
-  \paper {
-    left-margin = 20\mm
-    right-margin = 20\mm
-    top-margin = 20\mm
-    bottom-margin = 20\mm
-  }
-  
-  \score {
-    <<
-      \sopranoR
-      \altoR
-      \tenorR
-      \bassR
-    >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=100
-    }
-  }
-}

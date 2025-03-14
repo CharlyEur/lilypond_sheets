@@ -2,7 +2,7 @@
 \language "italiano"
 
 \header {
-  title = "Alleluia"
+  title = "Sanctus"
   subtitle = "Messe de San Lorenzo"
 }
 
@@ -29,7 +29,7 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=80
+      \tempo 4=112
     }
   }
 }

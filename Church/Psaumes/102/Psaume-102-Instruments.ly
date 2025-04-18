@@ -2,18 +2,12 @@
 \language "italiano"
 
 \header {
-  title = "Préparez, à travers le désert"
-  subtitle = "Louange"
-  composer = "D'après Isaïe 40, 11"
+  title = "Psaume 102"
+  subtitle = "Le Seigneur est tendresse et pitié"
 }
 
 \include "Music.ly"
-\include "..\..\..\utilities.ly"
-
-global = {
-  \key si \minor
-  \time 4/4
-}
+\include "../../../utilities.ly"
 
 \book{
   \paper {
@@ -24,34 +18,28 @@ global = {
   }
   
   \score {
-    <<
+    <<      
       \new Staff \with { instrumentName = "Trompette" } { \forTrumpet{ \sopranoChorus } }
-      \new Staff \with { instrumentName = "Flûte 2" } { \transpose do do' \altoChorus }
+      \new Staff \with { instrumentName = "Flûte 2" } { \forFlute{ \altoChorus } }
       \new Staff \with { instrumentName = "Sax Alto" } { \forSaxophoneAlto{ \tenorChorus } }
       \new Staff \with { instrumentName = "Basson" } { \clef bass \bassChorus }
     >>
     \layout { 
       indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=126
+      ragged-right = ##f
     }
   }
   
-  \score {
+  \score{
     <<
       \new Staff \with { instrumentName = "Trompette" } { \forTrumpet{ \sopranoVerse } }
-      \new Staff \with { instrumentName = "Flûte 2"} { \transpose do do' \altoVerse }
-      \new Staff \with { instrumentName = "Sax Alto"} { \forSaxophoneAlto{ \tenorVerse } }
+      \new Staff \with { instrumentName = "Flûte 2" } { \forFlute{ \altoVerse } }
+      \new Staff \with { instrumentName = "Sax Alto" } { \forSaxophoneAlto{ \tenorVerse }}
       \new Staff \with { instrumentName = "Basson" } { \clef bass \bassVerse }
     >>
     \layout { 
       indent = 2\cm
       \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=126
     }
   }
 }

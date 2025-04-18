@@ -2,8 +2,9 @@
 \language "italiano"
 
 \header {
-  title = "Venez, approchons-nous"
-  subtitle = "de la table du Christ"  
+  title = "Donne-nous, Seigneur, un coeur nouveau"
+  subtitle = "Psaume 50"
+  composer = "L. Deiss"
 }
 
 \include "Music.ly"
@@ -28,8 +29,20 @@
       indent = 2\cm
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
-    \midi {
-      \tempo 4=116
+  }
+  
+  \score {
+    <<
+      \new Staff \with { instrumentName = "Trompette" } { \forTrumpet{ \sopranoVerse } }
+      \new Staff \with { instrumentName = "Flûte 2" } { \forFlute{ \altoVerse } }
+      \new Staff \with { instrumentName = "Sax Alto" } { \forSaxophoneAlto{ \tenorVerse } }
+      \new Staff \with { instrumentName = "Basson" } { \clef bass \bassVerse }
+    >>
+    \layout { 
+      indent = 2\cm
+      \override BreathingSign.text = \markup { \musicglyph "comma" }
+      ragged-right = ##f
     }
   }
+  
 }

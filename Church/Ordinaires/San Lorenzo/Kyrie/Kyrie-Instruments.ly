@@ -7,6 +7,7 @@
 }
 
 \include "Music.ly"
+\include "..\..\..\..\utilities.ly"
 
 \book{
   \paper {
@@ -18,9 +19,9 @@
   
   \score {
     <<
-      \new Staff \with { instrumentName = "Trompette" } { \transpose do sib, \sopranoChorus }
+      \new Staff \with { instrumentName = "Trompette" } { \forTrumpet{ \sopranoChorus } }
       \new Staff \with { instrumentName = "Flûte 2" } { \transpose do do' \altoChorus }
-      \new Staff \with { instrumentName = "Sax Alto" } { \transpose do mib' \tenorChorus }
+      \new Staff \with { instrumentName = "Sax Alto" } { \forSaxophoneAlto{ \tenorChorus } }
       \new Staff \with { instrumentName = "Basson" } { \clef bass \bassChorus }
     >>
     \layout { 

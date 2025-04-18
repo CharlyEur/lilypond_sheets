@@ -13,6 +13,7 @@
 }
 
 \include "Music.ly"
+\include "..\..\..\utilities.ly"
 
 sopranoR = \new Staff \with {
   instrumentName = "Trompette"
@@ -44,9 +45,9 @@ contrechant = \new Staff \with {
   
   \score {
     \new StaffGroup <<
-      \transpose sib do' { \sopranoR }
+      \forTrumpet { \sopranoR }
       \altoR
-      \transpose mib do' { \tenorR }
+      \forSaxophoneAlto { \tenorR }
       \bassR
     >>
     \layout { 

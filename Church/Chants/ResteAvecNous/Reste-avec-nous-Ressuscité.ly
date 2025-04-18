@@ -2,8 +2,8 @@
 \language "italiano"
 
 \header {
-  title = "Il est temps de quitter vos tombeaux"
-  subtitle = "Louange"
+  title = "Reste avec nous, Ressuscité"
+  subtitle = "Eucharistie"
 }
 
 \include "Music.ly"
@@ -28,7 +28,7 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=120
+      \tempo 4=100
     }
   }
   
@@ -44,7 +44,7 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=120
+      \tempo 4=100
     }
   }
 }

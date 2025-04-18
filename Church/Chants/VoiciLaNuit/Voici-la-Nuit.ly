@@ -2,8 +2,10 @@
 \language "italiano"
 
 \header {
-  title = "Il est temps de quitter vos tombeaux"
-  subtitle = "Louange"
+  title = "Voici la Nuit"
+  subtitle = "Vigile Pascale"
+  composer = "Jo Akepsimas"
+  poet = "Didier Rimaud"
 }
 
 \include "Music.ly"
@@ -28,23 +30,7 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=120
-    }
-  }
-  
-  \score {
-    <<
-      \new Staff \with {instrumentName = "Soprano" midiInstrument = "choir aahs"} { \sopranoVerse }
-      \new Staff \with {instrumentName = "Alto" midiInstrument = "choir aahs"} { \altoVerse }
-      \new Staff \with {instrumentName = "Tenor" midiInstrument = "choir aahs"} { \clef bass \tenorVerse }
-      \new Staff \with {instrumentName = "Basse" midiInstrument = "choir aahs"} { \clef bass \bassVerse }
-    >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=120
+      \tempo 4=100
     }
   }
 }

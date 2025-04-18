@@ -7,6 +7,7 @@
 }
 
 \include "Music.ly"
+\include "../../../utilities.ly"
 
 \book{
   \paper {
@@ -18,7 +19,7 @@
   
   \score {
     <<
-      \new Staff \with {instrumentName = "Soprano" midiInstrument = "choir aahs"} { \sopranoChorus }
+      \new Staff \with {instrumentName = "Sax Alto" midiInstrument = "choir aahs"} { \forSaxophoneAlto \sopranoChorus }
       \new Staff \with {instrumentName = "Alto" midiInstrument = "choir aahs"} { \altoChorus }
       \new Staff \with {instrumentName = "Tenor" midiInstrument = "choir aahs"} { \clef bass \tenorChorus }
       \new Staff \with {instrumentName = "Basse" midiInstrument = "choir aahs"} { \clef bass \bassChorus }
@@ -34,7 +35,7 @@
   
   \score {
     <<
-      \new Staff \with {instrumentName = "Soprano" midiInstrument = "choir aahs"} { \sopranoVerse }
+      \new Staff \with {instrumentName = "Sax Alto" midiInstrument = "choir aahs"} { \forSaxophoneAlto \sopranoVerse }
       \new Staff \with {instrumentName = "Alto" midiInstrument = "choir aahs"} { \altoVerse }
       \new Staff \with {instrumentName = "Tenor" midiInstrument = "choir aahs"} { \clef bass \tenorVerse }
       \new Staff \with {instrumentName = "Basse" midiInstrument = "choir aahs"} { \clef bass \bassVerse }

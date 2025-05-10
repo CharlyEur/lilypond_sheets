@@ -169,8 +169,8 @@ trombone = \relative do' {
   re'4( fa) lab,
   sol2 re4
   do4.( re8) si4
-  do2.
-  r2.
+  do2 |
+  r2. |
   
   \time 5/8
   
@@ -324,9 +324,9 @@ sax = \relative do' {
   r1 r1 r1 \bar ""
   r1 r1 r1 \bar ""
   r1 r1 r1 r4 \bar "||"
-  mib8 ( fa) sol lab sol fa
+  mib,8 ( fa) sol lab sol fa
   mib8 ( re) do sib lab sol
-  do,8 mib sol mib' re do
+  do8 mib sol mib re do
   re2 si4
   
   sol8 do do do do do

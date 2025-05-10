@@ -7,6 +7,7 @@
 }
 
 \include "Music.ly"
+\include "../../../utilities.ly"
 
 \book{
   \paper {

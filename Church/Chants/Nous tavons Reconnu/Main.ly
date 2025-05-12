@@ -2,9 +2,9 @@
 \language "italiano"
 
 \header {
-  title = "Allez par toute la Terre"
-  %subtitle = "Pour l'abbaye de Maredsous"
-  %composer = "Joseph Berthier"
+  title = "Nous t'avons reconnu Seigneur"
+  subtitle = "Chants de l'Emmanuel"
+  composer = "M. Wittal, J. Rouquès"
 }
 
 \include "Music.ly"
@@ -32,24 +32,7 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=80
-    }
-  }
-  
-  \score{
-    <<
-      \new Staff \with { instrumentName = "Soliste" midiInstrument = "choir aahs" } { \solisteVerse }
-      \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoVerse }
-      \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs" } { \altoVerse }
-      \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs" } { \clef bass \tenorVerse }
-      \new Staff \with { instrumentName = "Basse" midiInstrument = "choir aahs" } { \clef bass \bassVerse }
-    >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
+      \tempo 4=76
     }
   }
 }

@@ -23,10 +23,10 @@ OK
 OK
 
 ## Viens, Souffle de Dieu
-NOK
+OK 2
 
 ## Viens Esprit Saint
-NOK
+OK 2
 
 ## Onction d'Amour
 NOK
@@ -50,7 +50,7 @@ Orgue
 OK
 
 ## Nous t'avons reconnu Seigneur
-NOK
+OK 2
 
 ## Je vous salue Marie
 OK

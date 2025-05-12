@@ -2,9 +2,9 @@
 \language "italiano"
 
 \header {
-  title = "Allez par toute la Terre"
-  %subtitle = "Pour l'abbaye de Maredsous"
-  %composer = "Joseph Berthier"
+  title = "Jésus, Sauveur du Monde"
+  subtitle = "sur le choral 'Herslich tut mich verlangen'"
+  composer = "J.S. Bach"
 }
 
 \include "Music.ly"
@@ -36,13 +36,13 @@
     }
   }
   
-  \score{
+  \score {
     <<
-      \new Staff \with { instrumentName = "Soliste" midiInstrument = "choir aahs" } { \solisteVerse }
-      \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoVerse }
-      \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs" } { \altoVerse }
-      \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs" } { \clef bass \tenorVerse }
-      \new Staff \with { instrumentName = "Basse" midiInstrument = "choir aahs" } { \clef bass \bassVerse }
+      \new Staff \with { instrumentName = "Flûte 1" } { \forFlute \sopranoChorus }
+      \new Staff \with { instrumentName = "Flûte 2" } { \forFlute \altoChorus }
+      \new Staff \with { instrumentName = "Trompette" } { \forTrumpet \sopranoChorus }
+      \new Staff \with { instrumentName = "Sax Alto 1" } { \forSaxophoneAlto \tenorChorus }
+      \new Staff \with { instrumentName = "Sax Alto 2" } { \transpose do do' \forSaxophoneAlto \bassChorus }
     >>
     \layout { 
       indent = 2\cm

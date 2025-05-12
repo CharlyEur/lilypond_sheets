@@ -1,72 +1,44 @@
 global = {
-  \key sol \minor
-  \time 6/8
+  \key si \minor
+  \time 4/4
 }
 
 sopranoChorus = \relative do' {
     \global
+    \partial 4
+    fad4
+    si4 la sol fad
+    mi2 fad4 dod'
+    re4 re dod8 si dod4
+    si2.
+    
+    \bar "|."
   }
   
 altoChorus = \relative do' {
     \global
+    re4
+    re4 re mi la,
+    si4( la) la fad'
+    fad4 fad fad fad8 mi
+    re2.    
   }
   
 tenorChorus = \relative do' {
     \global
+    la4
+    sol4 la si8( dod) re4
+    re4 dod re dod
+    dod4 si si lad
+    si2.
   }
   
 bassChorus = 
   \relative do {
     \global
+    re4
+    sol4 fad mi re
+    sol,4 ( la) re lad
+    si8( dod) re( mi) fad4 fad,4 
+    si2.
   }
-
-%----------------------------------------------------------------
-
-%stemOff = \hide Staff.Stem
-%stemOn = \undo \stemOff
-
-%globalC = {
-%  \key sol \minor
-%  \cadenzaOn
-%}
-
-%solisteVerse =
-%  \relative do'' {
-%    \globalC
-%    \stemOff do\breve sol1 \stemOn la4 \bar "||"
-%    \stemOff sib\breve fa1 \stemOn sol4 \bar "||"
-%    \stemOff sol\breve \stemOn fad4 sol la
-%    \bar "|."
-%  }
-
-%sopranoVerse =
-%  \relative do'' {
-%    \globalC
-%    \stemOff do\breve ~ do1 \stemOn la4 \bar "||"
-%    \stemOff sib\breve ~ sib1 \stemOn sol4 ~ \bar "||"
-%    \stemOff sol\breve ~ \stemOn sol2 fad4
-%  }
-
-%altoVerse =
-%  \relative do' {
-%    \globalC
-%    \stemOff mib\breve ~ mib1 \stemOn do4 \bar "||"
-%    \stemOff re\breve ~ re1 \stemOn sib4 \bar "||"
-%    \stemOff do\breve ~ \stemOn do2 re4
-%  }
-
-%tenorVerse = 
-%  \relative do' {
-%    \globalC
-%    \stemOff sol\breve ~ sol1 \stemOn la4 \bar "||"
-%    \stemOff fa\breve ~ fa1 \stemOn sol4 ~ \bar "||"
-%    \stemOff sol\breve ~ \stemOn sol2 la4
-%  }
-
-%bassVerse =
-%  \relative do {
-%    \globalC
-%    \stemOff do\breve ~ do1 \stemOn fa4 \bar "||"
-%    \stemOff sib,\breve ~ sib1 \stemOn mib4 ~ \bar "||"
-%    \stemOff mib\breve ~ \stemOn mib2 re4
-%  }

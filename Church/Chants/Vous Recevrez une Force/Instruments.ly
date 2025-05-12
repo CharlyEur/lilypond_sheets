@@ -2,68 +2,14 @@
 \language "italiano"
 
 \header {
-  title = "Allez par toute la Terre"
-  subtitle = "Pour l'abbaye de Maredsous"
-  composer = "Joseph Berthier"
+  title = "Vous recevrez une Force"
+  composer = "Benjamin & Thomas Pouzin"
 }
 
 \include "Music.ly"
-
-global = {
-  \key sol \minor
-  \time 6/8
-}
-
-sopranoR = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
-} { \sopranoChorus }
-
-altoR = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "choir aahs"
-} { \altoChorus }
-
-tenorR = \new Staff \with {
-  instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
-} {
-  \clef bass \tenorChorus
-}
-
-bassR = \new Staff \with {
-  instrumentName = "Basse"
-  midiInstrument = "choir aahs"
-} {
-  \clef bass \bassChorus
-}
+\include "../../../utilities.ly"
 
 %-------------------- couplet -------------------
-
-solisteC = \new Staff \with {
-  instrumentName = "Soliste"
-  midiInstrument = "choir aahs"
-} { \solisteVerse }
-
-sopranoC = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
-} { \sopranoVerse }
-
-altoC = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "choir aahs"
-} { \altoVerse }
-
-tenorC = \new Staff \with {
-  instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
-} { \clef bass \tenorVerse }
-
-bassC = \new Staff \with {
-  instrumentName = "Basse"
-  midiInstrument = "choir aahs"
-} { \clef bass \bassVerse }
 
 \book{
   \paper {
@@ -75,34 +21,16 @@ bassC = \new Staff \with {
   
   \score {
     <<
-      \sopranoR
-      \altoR
-      \tenorR
-      \bassR
+      \new Staff \with { instrumentName = "Soliste" } { \solisteChorus }
+      \new Staff \with { instrumentName = "Trompette" } { \forTrumpet \sopranoAChorus }
+      %\new Staff \with { instrumentName = "Soprano 2" midiInstrument = "choir aahs" } { \sopranoBChorus }
+      \new Staff \with { instrumentName = "Flûte 2" } { \forFlute \altoChorus }
+      \new Staff \with { instrumentName = "Sax Alto" } { \forSaxophoneAlto \tenorChorus }
+      %\new Staff \with { instrumentName = "Basse" midiInstrument = "choir aahs" } { \clef bass \bassChorus }
     >>
     \layout { 
       indent = 2\cm
       \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
-    }
-  }
-  
-  \score{
-    <<
-      \solisteC
-      \sopranoC
-      \altoC
-      \tenorC
-      \bassC
-    >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
     }
   }
 }

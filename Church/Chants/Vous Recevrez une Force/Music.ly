@@ -180,12 +180,68 @@ tenorChorus = \relative do {
     r4.
     re4 r8 re ~ re2
     fad4 r8 fad ~ fad2
+    sol4 r8 sol ~ sol2
+    la4 r8 la ~ la2
     si4 r8 si ~ si2
+    fad4 r8 fad ~ fad2
+    sol8 sol r4 r2
+    
+    la4 r8 la ~ la2
+    sol8 sol r4 r2    
+    la4 r8 la ~ la2
+    la2. r4
+    re2 la
+    sol2 re'
+    
+    sol,4. sol8 re4. re'8
+    la2 re4 dod
+    si2 fad
+    sol2 re'    
+    sol,4. sol8 re4. re'8
+    la4. la8 re4 dod
+    
+    si2 fad
+    sol2 re'4 re
+    sol,4. sol8 re4. re'8
+    la4. la8 re4 sol,
+    si2 fad
+    sol2 re'4 re
+    sol,4. sol8 re4. re'8
+    la4. la8 re2    
   }
   
 bassChorus = 
   \relative do {
     \global
     r4.
-    re,
+    re,4 r8 re ~ re2
+    fad4 r8 fad ~ fad2
+    sol4 r8 sol ~ sol2
+    la4 r8 la ~ la2
+    si4 r8 si ~ si2
+    fad4 r8 fad ~ fad2
+    sol8 sol r4 r2
+    
+    la4 r8 la ~ la2
+    sol8 sol r4 r2    
+    la4 r8 la ~ la2
+    la2. r4
+    re2 la
+    sol2 re'
+    
+    sol,4. sol'8 re4. re8
+    la2 re4 dod
+    si2 fad
+    sol2 re'    
+    sol,4. sol'8 re4. re8
+    la4. la8 re4 dod
+    
+    si2 fad
+    sol2 re'4 re
+    sol,4. sol'8 re4. re8
+    la4. la8 re4 sol,
+    si2 fad
+    sol2 re'4 re
+    sol,4. sol'8 re4. re8
+    la4. la8 re2  
   }

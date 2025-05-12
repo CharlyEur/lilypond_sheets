@@ -2,15 +2,12 @@
 \language "italiano"
 
 \header {
-  title = "Allez par toute la Terre"
-  %subtitle = "Pour l'abbaye de Maredsous"
-  %composer = "Joseph Berthier"
+  title = "J'ai vu l'eau vive"
+  composer = "Philippe Robert"
 }
 
 \include "Music.ly"
 \include "../../../utilities.ly"
-
-%-------------------- couplet -------------------
 
 \book{
   \paper {
@@ -22,6 +19,7 @@
   
   \score {
     <<
+      \new Staff \with { instrumentName = "Soliste" midiInstrument = "choir aahs" } { \solisteChorus }
       \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoChorus }
       \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs" } { \altoChorus }
       \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs" } { \clef bass \tenorChorus }
@@ -32,13 +30,12 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=80
+      \tempo 4=104
     }
   }
   
   \score{
     <<
-      \new Staff \with { instrumentName = "Soliste" midiInstrument = "choir aahs" } { \solisteVerse }
       \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoVerse }
       \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs" } { \altoVerse }
       \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs" } { \clef bass \tenorVerse }

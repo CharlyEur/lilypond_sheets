@@ -2,8 +2,8 @@
 \language "italiano"
 
 \header {
-  title = "Vous recevrez une Force"
-  composer = "Benjamin & Thomas Pouzin"
+  title = "Regardez l'humilité de Dieu"
+  subtitle = "d'après Saint François d'Assise"
 }
 
 \include "Music.ly"
@@ -21,9 +21,7 @@
   
   \score {
     <<
-      \new Staff \with { instrumentName = "Soliste" midiInstrument = "choir aahs" } { \solisteChorus }
-      \new Staff \with { instrumentName = "Soprano 1" midiInstrument = "choir aahs" } { \sopranoAChorus }
-      \new Staff \with { instrumentName = "Soprano 2" midiInstrument = "choir aahs" } { \sopranoBChorus }
+      \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoChorus }
       \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs" } { \altoChorus }
       \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs" } { \clef bass \tenorChorus }
       \new Staff \with { instrumentName = "Basse" midiInstrument = "choir aahs" } { \clef bass \bassChorus }
@@ -33,7 +31,7 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=120
+      \tempo 4=92
     }
   }
 }

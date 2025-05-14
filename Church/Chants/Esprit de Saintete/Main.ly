@@ -21,17 +21,14 @@
   
   \score {
     <<
-      \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoChorus }
-      \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs" } { \altoChorus }
-      \new Staff \with { instrumentName = "Trompette" midiInstrument = "choir aahs" } { \forTrumpet \sopranoChorus }
-      \new Staff \with { instrumentName = "Sax Alto" midiInstrument = "choir aahs" } { \forSaxophoneAlto \altoChorus }
+      \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \track }
+      \new Staff \with { instrumentName = "Trompette" midiInstrument = "choir aahs" } { \forTrumpet \track }
+      \new Staff \with { instrumentName = "Sax Alto" midiInstrument = "choir aahs" } { \forSaxophoneAlto \transpose do do, \track }
+      \new Staff \with { instrumentName = "Trombone" midiInstrument = "choir aahs" } { \clef bass \transpose do do, \track }
     >>
     \layout { 
       indent = 2\cm
       \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
     }
   }
 }

@@ -29,10 +29,10 @@ OK 2
 OK 2
 
 ## Onction d'Amour
-NOK
+OK 2
 
 ## PU : Jésus Sauveur du Monde
-NOK
+OK 2
 
 ## Offertoire : Ne crains pas ?
 Proposition

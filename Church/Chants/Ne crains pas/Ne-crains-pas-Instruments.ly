@@ -33,7 +33,7 @@
   
   \score {
     <<
-      \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs"} { \sopranoVerse }
+      \new Staff \with { instrumentName = "Trompette" } { \forTrumpet \sopranoVerse }
     >>
     \layout { 
       indent = 2\cm
@@ -43,7 +43,7 @@
     
   \score {
     <<
-      \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs"} { \tenorVerse }
+      \new Staff \with { instrumentName = "Sax Alto" } {\transpose do do, \forSaxophoneAlto \tenorVerse }
     >>
     \layout { 
       indent = 2\cm

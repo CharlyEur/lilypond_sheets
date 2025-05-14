@@ -2,8 +2,8 @@
 \language "italiano"
 
 \header {
-  title = "Sanctus"
-  subtitle = "Messe de Saint-Claude de la Colombière"
+  title = "Agnus"
+  subtitle = "Messe de Saint-François Xavier"
 }
 
 \include "Music.ly"
@@ -19,6 +19,7 @@
   
   \score {
     <<
+      \new Staff{ \soliste }
       \new Staff{ \soprano }
       \new Staff{ \alto }
       \new Staff{ \clef bass \tenor }
@@ -29,7 +30,7 @@
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4.=69
+      \tempo 4=112
     }
   }
 }

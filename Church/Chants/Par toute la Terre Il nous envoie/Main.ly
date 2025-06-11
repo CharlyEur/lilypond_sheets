@@ -24,6 +24,8 @@
     <<
       \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoChorus }
       \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs" } { \clef bass \tenorChorus }
+      \new Staff \with { instrumentName = "Saxo Alto (Soprano)" midiInstrument = "choir aahs" } { \forSaxophoneAlto \sopranoChorus }
+      \new Staff \with { instrumentName = "Saxo Alto (Tenor)" midiInstrument = "choir aahs" } { \forSaxophoneAlto \tenorChorus }
     >>
     \layout { 
       indent = 2\cm

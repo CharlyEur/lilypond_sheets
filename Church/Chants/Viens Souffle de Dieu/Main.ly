@@ -37,6 +37,7 @@
       \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs" } { \sopranoChorus }
       \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs" } { \altoChorus }
       \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs" } { \clef bass \tenorChorus }
+      \new Staff \with { instrumentName = "Sax" midiInstrument = "choir aahs" } { \forSaxophoneAlto \tenorChorus }
       \new Staff \with { instrumentName = "Basse" midiInstrument = "choir aahs" } { \clef bass \bassChorus }
     >>
     \layout { 

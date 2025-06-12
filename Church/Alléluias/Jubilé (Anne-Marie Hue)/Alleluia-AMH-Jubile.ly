@@ -8,31 +8,7 @@
 }
 
 \include "Music.ly"
-
-sopranoR = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
-} { \sopranoTrack }
-
-altoR = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "choir aahs"
-} { \altoTrack }
-
-tenorR = \new Staff \with {
-  instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
-} { \clef bass \tenorTrack }
-
-bassR = \new Staff \with {
-  instrumentName = "Basse"
-  midiInstrument = "choir aahs"
-} { \clef bass \bassTrack }
-
-contrechant = \new Staff \with {
-  instrumentName = "Contrechant"
-  midiInstrument = "choir aahs"
-} { \contrechantTrack }
+\include "../../../utilities.ly"
 
 \book{
   \paper {
@@ -44,10 +20,10 @@ contrechant = \new Staff \with {
   
   \score {
     \new StaffGroup <<
-      \sopranoR
-      \altoR
-      \tenorR
-      \bassR
+      \new Staff \with { instrumentName = "Soprano" midiInstrument = "choir aahs"} { \sopranoTrack }
+      \new Staff \with { instrumentName = "Alto" midiInstrument = "choir aahs"} { \altoTrack }
+      \new Staff \with { instrumentName = "Tenor" midiInstrument = "choir aahs"} { \clef bass \tenorTrack }
+      \new Staff \with { instrumentName = "Basse" midiInstrument = "choir aahs"} { \clef bass \bassTrack }
     >>
     \layout { 
       indent = 2\cm
@@ -59,18 +35,7 @@ contrechant = \new Staff \with {
   }
   
   \score {
-    \contrechant
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
-    }
-  }
-  
-  \score {
-    \transpose do sib, { \contrechant }
+    \new Staff \with { instrumentName = "Contrechant" } { \contrechantTrack }
     \layout { 
       indent = 2\cm
       \override BreathingSign.text = \markup { \musicglyph "comma" }

@@ -2,15 +2,14 @@
 \language "italiano"
 
 \header {
-  title = "Je veux chanter ton amour, Seigneur"
+  title = "Moi, si j'avais commis"
   subtitle = "Chants de l'Emmanuel"
-  composer = "A. Cazade"
+  composer = "Frère Ephraïm"
+  poet = "d'après Sainte Thérèse de l'Enfant Jésus"
 }
 
 \include "Music.ly"
 \include "../../../utilities.ly"
-
-%-------------------- couplet -------------------
 
 \book{
   \paper {
@@ -24,7 +23,7 @@
     <<
       \new Staff \with { instrumentName = "Flûte 1" } { \forFlute \soprano }
       \new Staff \with { instrumentName = "Flûte 2" } { \forFlute \alto }
-      \new Staff \with { instrumentName = "Trompette" } { \forTrumpet \soprano }
+      \new Staff \with { instrumentName = "Tromp. (sourdine)" } { \forTrumpet \soprano }
       \new Staff \with { instrumentName = "Sax Alto 1" } { \forSaxophoneAlto \tenor }
       \new Staff \with { instrumentName = "Sax Alto 2" } { \transpose do do' \forSaxophoneAlto \bass }
     >>

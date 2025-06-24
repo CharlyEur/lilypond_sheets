@@ -1,20 +1,9 @@
-\version "2.22.1"
-\language "italiano"
-
-\header {
-  title = "Je vous salue Marie"
-  subtitle = "Prière de l'Angélus"
-  composer = "Jean-Baptiste de la Sainte Famille"
-}
-
 global = {
   \key mi \minor
   \time 12/8
 }
 
-sopranoR = \new Staff \with {
-  instrumentName = "Trompette"
-} {
+sopranoChorus = {
   \relative do' {
     \global
     mi8 mi fad sol8. la16 sol8 fad mi re mi4 mi8
@@ -29,9 +18,7 @@ sopranoR = \new Staff \with {
   }
 }
 
-altoR = \new Staff \with {
-  instrumentName = "Flûte"
-} {
+altoChorus = {
   \relative do' {
     \global
     mi8 mi fad mi8. mi16 mi8 re si si si4 si8
@@ -45,9 +32,7 @@ altoR = \new Staff \with {
   }
 }
 
-tenorR = \new Staff \with {
-  instrumentName = "Sax Alto"
-} {
+tenorChorus = {
   \relative do' {
     \global
     sol8 sol la si8. do16 si8 si si fad sol4 sol8
@@ -61,10 +46,7 @@ tenorR = \new Staff \with {
   }
 }
 
-bassR = \new Staff \with {
-  instrumentName = "Basson"
-} {
-  \clef bass
+bassChorus = {
   \relative do {
     \global
     mi8 mi mi mi8. mi16 mi8 si si si mi4 mi8
@@ -78,24 +60,66 @@ bassR = \new Staff \with {
   }
 }
 
-\book{
-  \paper {
-    left-margin = 20\mm
-    right-margin = 20\mm
-    top-margin = 20\mm
-    bottom-margin = 20\mm
+%-------------------- couplet -------------------
+
+stemOff = \hide Staff.Stem
+stemOn = \undo \stemOff
+
+globalC = {
+  \key mi \minor
+  \cadenzaOn
+}
+
+sopranoVerse = {
+  \relative do'' {
+    \globalC
+    \stemOff sol\breve \stemOn la4 la la sol2 \bar "|"
+    \stemOff sol\breve \stemOn fad4 fad mi re mi2 \bar "||"
+    
+    \break
+    
+    \stemOff sol\breve \stemOn la4 la la la sol2 \bar "|"
+    \stemOff sol\breve \stemOn fad2 fad4 fad mi re mi2 \bar "||"
+    
+    \break
+    
+    \stemOff sol\breve \stemOn la4 la la la sol2 \bar "|"
+    \stemOff sol\breve \stemOn fad2 mi4 re mi2 \bar "||"
   }
-  
-  \score {
-    <<
-      \transpose sib do' \sopranoR
-      \altoR
-      \transpose mib do' { \tenorR }
-      \bassR
-    >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
+}
+
+tenorVerse = {
+  \relative do' {
+    \globalC
+    \stemOff r\breve \stemOn r1 r4
+    \stemOff si\breve \stemOn si4 si si fad sol2
+    
+    \break
+    
+    \stemOff r\breve \stemOn r1 r2
+    \stemOff si\breve \stemOn si2 si4 si si fad sol2
+    
+    \break
+    
+    \stemOff r\breve \stemOn r1 r2 \bar "|"
+    \stemOff si\breve \stemOn si2 si4 fad sol2 \bar "||"
+  }
+}
+
+bassVerse = {
+  \relative do' {
+    \globalC
+    \stemOff r\breve \stemOn r1 r4
+    \stemOff sol\breve \stemOn si,4 si si si mi2
+    
+    \break
+    
+    \stemOff r\breve \stemOn r1 r2
+    \stemOff sol\breve \stemOn si,2 si4 si si si mi2
+    
+    \break
+    
+    \stemOff r\breve \stemOn r1 r2
+    \stemOff sol\breve \stemOn si,2 si4 si mi2
   }
 }

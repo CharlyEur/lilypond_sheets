@@ -1,19 +1,8 @@
-\version "2.22.1"
-\language "italiano"
-
-\header {
-  title = "Notre Père"
-  composer = "d'après Nikolaï Rimsky-Korsakov"
-}
-
 global = {
   \key re \minor
 }
 
-sopranoR = \new Staff \with {
-  instrumentName = "Trompette"
-  midiInstrument = "trumpet"
-} {
+soprano = {
   \relative do'' {
     \global
     la8 la la4 la8 \breathe
@@ -34,10 +23,7 @@ sopranoR = \new Staff \with {
   }
 }
 
-altoR = \new Staff \with {
-  instrumentName = "Flûte 2"
-  midiInstrument = "choir aahs"
-} {
+alto = {
   \relative do' {
     \global
     fa8 fa fa4 fa8 \breathe
@@ -57,10 +43,7 @@ altoR = \new Staff \with {
   }
 }
 
-tenorR = \new Staff \with {
-  instrumentName = "Sax Tenor"
-  midiInstrument = "choir aahs"
-} {
+tenor = {
   \relative do' {
     \global
     do8 do do4 do8 \breathe
@@ -80,11 +63,7 @@ tenorR = \new Staff \with {
   }
 }
 
-bassR = \new Staff \with {
-  instrumentName = "Basson"
-  midiInstrument = "bassoon"
-} {
-  \clef bass
+bass = {
   \relative do {
     \global
     fa8 fa fa4 fa8 \breathe
@@ -101,31 +80,5 @@ bassR = \new Staff \with {
     fa8 fa mi re re re do4 do \breathe
     do8 do do do do la la la sol4 sol \breathe
     sol8 sol sol sol sol do do do4 fa \fermata
-  }
-}
-
-\book{
-  \paper {
-    left-margin = 20\mm
-    right-margin = 20\mm
-    top-margin = 20\mm
-    bottom-margin = 20\mm
-  }
-  
-  \score {
-    \new StaffGroup <<
-      \transpose sib do' \sopranoR
-      \altoR
-      \transpose mib do' \tenorR
-      \bassR
-    >>
-    \layout { 
-      indent = 2\cm   
-      \override Score.BarLine.color = ##t
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=60
-    }
   }
 }

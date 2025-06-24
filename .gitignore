@@ -3,3 +3,6 @@
 
 # Midi generated files
 **/*.mid
+
+# for Python virtual env
+/Scripts/.venv/

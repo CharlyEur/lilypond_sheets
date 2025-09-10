@@ -1,4 +1,4 @@
-\version "2.18.2"
+\version "2.22.1"
 \language "italiano"
 
 \header {
@@ -20,8 +20,9 @@
 
   \score {
   <<
-  \new Staff \with { instrumentName = "Trombone" midiInstrument = "trombone"} { \clef bass \trombone }  
-  \new Staff \with { instrumentName = "Sax Alto 1"  } { \forSaxophoneAlto{\sax } }
+  \new Staff \with { instrumentName = "Trombone" } { \clef bass \trombone }
+  %\new Staff \with { instrumentName = "Sax 1" } { \forSaxophoneAlto{ \transpose do do' \trombone } }
+  %\new Staff \with { instrumentName = "Sax 2"  } { \forSaxophoneAlto{ \sax } }
   >>
     \layout {
       \context{

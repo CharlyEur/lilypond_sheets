@@ -113,19 +113,35 @@ trombone = \relative do {
 
   \override Beam.grow-direction = #RIGHT
   \featherDurations #(ly:make-moment 1 4) { sib64[ \pp sib sib sib sib sib sib sib sib sib] }
-  % revert to non-feathered beams
   \override Beam.grow-direction = #'()
 
+  %sib64 sib sib sib
+
+  la'8 reb fa2 \fermata
   
+  \tuplet 3/2 {sib,,8[ la' sib,]} la'8 r
   
-  sib2 la solb lab \fermata
+  \acciaccatura sib8 dob8 r8 r4
   
-  r4 fa1 \fermata
+  \override TrillSpanner.bound-details.left.text = ##f
+  fa,1\startTrillSpan
+  sib,4-.\stopTrillSpan \p
+  lab'4-. r
+  
+  \bar "" \break
+  
+  \tuplet 3/2 {sib,8--[ do-- sib--]}
+  \tuplet 3/2 {mi8--[ fad-- mi--]} r4
+  
+  sib4-- lab'-- fab-- sib2.-> \fermata
+  
+  r4 \fermata
+  
+  sib,2 la solb lab \fermata
+  
+  r4 fa1 \p \fermata
   
   \cadenzaOff
-  
-  %\bar "|"
-  
   
   \bar "||"  
   \mark \default
@@ -133,7 +149,7 @@ trombone = \relative do {
   
   \time 6/8
   
-  re4 sib8 fad'4 sold8
+  re'4 sib8 fad'4 sold8 ~
   sold4 re8 do4 sib8
   lab'4 sib,8 la'4 do16 (sib ) ~
   sib4. \fermata r4. \fermata
@@ -151,14 +167,139 @@ trombone = \relative do {
   
   \time 2/4
   
-  mib8( lab) sib4
+  mib,8( lab) do-. re ~
+  re8 sib4-> fa8(
+  sol8) sib-. mib,-. fa-> ~
+  fa8 do' sib4--
   
-  % \tuplet 2/3 { note note }
+  do,8( mib) lab-. sib-> ~
+  sib8 lab-. mib16( fa) do8-.
+  
+  \tuplet 3/2 {sib4 fa' do'}
+  \tuplet 3/2 {sib4 fa sib,}
+    
+  mib8( \f lab) do-. re ~
+  re8 sib-> ~ sib fa8-.
+  solb8( reb) lab'-. sib-> ~
+  sib4 ~ sib8 r
+  
+  do,4 \p \cresc mib
+  lab4. dod,8 ~
+  dod8 mi4 la8
+  re,4 fa ~
+  fa8 sib4 mib,8
+  solb4 dob8 r
+  r8 do-> \f ( sib) sib->
+  fad'2 \fermata
+    
+  \bar "||"
+  \mark \default
+  
+  r2
+  r2
+  r2
+  r2
+  r2
+  r2
+  r2 \fermata
   
   \bar "||"
   \mark \default
   
-  r16 la, dob mib fab mib fab solb
+   \cadenzaOn
+        
+  \override Beam.grow-direction = #RIGHT
+  \featherDurations #(ly:make-moment 1 4) { do,64[ \f do do do do do do do do] }
+  \override Beam.grow-direction = #'()
+
+  %do16 do do do
+
+  fad1 \pp sib8 -. r8 r4 \fermata
+  
+  \bar "" \break
+
+  sol8([ mib16 sib8 reb mib fa la16] sol8) \breathe
+  sib8([ do] lab16[ fab8 do re mi16] sib'8) \breathe
+  r8 lab( sib[ do] sib[ do] re) r
+  r8 do( re [mi] re[ mi] fad8) r8 r4 \fermata
+  
+  \bar "" \break
+  
+  \cadenzaOff
+  
+  r2
+  r2  
+  
+  \bar "||"
+  \mark \default
+  
+  mib,8-. mib-. sib'16-> ( sol) fa-. mib-.
+  do16-. re-. mib8-. fa16-. sol-. lab8-.
+  sol8-. sol-. sib16-> ( do8.)
+  fa,4-> ~ fa8 r
+  sol16-> sol8-- mib16-. sib'16( sol) fa-. mib-.
+  do16-. re-. mib8-. sol16-> mib8.--
+  
+  sib16 sib8 sib16-. lab16->( sib) do-. re-.
+  r8 sib-> ( mib->) r
+    
+  \bar "||"
+  \mark \default
+  
+  mib8-. mib-. sib'16-> ( sol) fa-. mib-.
+  do16-. re-. mib8-. fa16-. sol-. lab8-.
+  sol8-. sol-. sib16-> ( do8.)
+  fa,4-> ~ fa8 r
+  sol16-> sol8-- mib16-. sib'16( sol) fa-. mib-.
+  do16-. re-. mib8-. sol16-> mib8.--
+  
+  sib'16 sib8 sib16-. lab16->( sib) do-. re-.
+  r8 sib-> ( mib->) r
+  
+  \bar "||"
+  \mark \default
+  
+  \time 6/8
+  
+  sib8( do) sib-. lab( sol) lab-.
+  sib4-. sib,8-. sib4-- r8
+  
+  sib'8( do) sib-. \tuplet 2/3 {lab8-. fa-.}
+  \tuplet 2/3 {sib-. sol-.} \tuplet 2/3 {fa-. sib,-.}
+  sib'8( do) sib-. lab( sol) lab-.
+  
+  sib4-. mib8-. sib4-- r8
+  
+  
+  lab8( sib) lab-. \tuplet 2/3 {sol8-. mib-.}
+  \tuplet 2/3 {sib8-. fa'-.} sib4.--
+    
+  \bar "||"
+  \mark \default
+  
+  \time 2/4
+  
+  mib,4 \f \tuplet 3/2 {mib8( sib) mib}
+  \tuplet 3/2 {sol8( mib) sol} sib8-> mib->
+  \tuplet 3/2 {do8( sib) lab} \tuplet 3/2 {mib8( do) mib}
+  \tuplet 3/2 {fa8 sol fa} sib,4--
+  
+  \tuplet 3/2 {mib8( fa) fad} sol8 mib
+  \tuplet 3/2 {sib'4 sib8} \tuplet 3/2 {sib8( sol) sib}
+  \tuplet 3/2 {do8( sib) mib,} do8-. do'-.
+  \tuplet 3/2 {re8( sib) do} re4
+      
+  \bar "||"
+  \mark \default
+  
+  r4 mib->
+  sib4-> \tuplet 3/2 {mib,8-> fa-> sol->}
+  fa4-> lab8 mib'
+  fa4 ~ fa8 r
+  r2
+  r2
+  r2  
+  r16 la,, dob mib fab mib fab solb
   lab mib fab lab dob reb dob reb
   mib8 \ff r r4
   mib,8 \fff r8 r4

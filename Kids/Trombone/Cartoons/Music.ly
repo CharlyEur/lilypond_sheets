@@ -161,7 +161,7 @@ trombone = \relative do {
   r2. \fermata
   
   \bar "||"  
-  \mark \default
+  \mark "I"
   
   \set Timing.measurePosition = #(ly:make-moment 0 1)
   
@@ -203,6 +203,8 @@ trombone = \relative do {
   r2
   r2 \fermata
   
+  \break
+  
   \bar "||"
   \mark \default
   
@@ -216,19 +218,20 @@ trombone = \relative do {
 
   fad1 \pp sib8 -. r8 r4 \fermata
   
-  \bar "" \break
-
   sol8([ mib16 sib8 reb mib fa la16] sol8) \breathe
+  
+  \bar "" \break
+  
   sib8([ do] lab16[ fab8 do re mi16] sib'8) \breathe
   r8 lab( sib[ do] sib[ do] re) r
   r8 do( re [mi] re[ mi] fad8) r8 r4 \fermata
-  
-  \bar "" \break
-  
+    
   \cadenzaOff
   
   r2
-  r2  
+  r2
+  
+  \break
   
   \bar "||"
   \mark \default
@@ -242,7 +245,9 @@ trombone = \relative do {
   
   sib16 sib8 sib16-. lab16->( sib) do-. re-.
   r8 sib-> ( mib->) r
-    
+  
+  \break
+  
   \bar "||"
   \mark \default
   
@@ -269,11 +274,25 @@ trombone = \relative do {
   sib'8( do) sib-. lab( sol) lab-.
   
   sib4-. mib8-. sib4-- r8
+    
+  lab8( sib) lab-. \tuplet 2/3 {sol8-. mib-.}
+  \tuplet 2/3 {sib8-. fa'-.} sib4.--
+      
+  \bar "||"
+  \mark \default
   
+  sib8( do) sib-. lab( sol) lab-.
+  sib4-. sib,8-. sib4-- r8
+  
+  sib'8( do) sib-. \tuplet 2/3 {lab8-. fa-.}
+  \tuplet 2/3 {sib-. sol-.} \tuplet 2/3 {fa-. sib,-.}
+  sib'8( do) sib-. lab( sol) lab-.
+  
+  sib4-. mib8-. sib4-- r8
   
   lab8( sib) lab-. \tuplet 2/3 {sol8-. mib-.}
   \tuplet 2/3 {sib8-. fa'-.} sib4.--
-    
+  
   \bar "||"
   \mark \default
   

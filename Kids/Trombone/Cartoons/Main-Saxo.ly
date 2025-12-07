@@ -20,7 +20,7 @@
 
   \score {
   <<
-  \new Staff \with { instrumentName = "Trombone" } { \clef bass \trombone }
+  \new Staff \with { instrumentName = "Sax 1" } { \forSaxophoneAlto{ \transpose do do' \trombone } }
   >>
     \layout {
       \context{

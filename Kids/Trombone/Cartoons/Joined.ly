@@ -8,6 +8,7 @@
 }
 
 \include "Music.ly"
+\include "Music_Sax.ly"
 \include "../../../utilities.ly"
 
 \book{
@@ -21,6 +22,8 @@
   \score {
   <<
   \new Staff \with { instrumentName = "Trombone" } { \clef bass \trombone }
+  \new Staff \with { instrumentName = "Sax 2" } { \sax }
+  %\new Staff \with { instrumentName = "Sax 2" } { \forSaxophoneAlto{ \transpose do do' \sax } }
   >>
     \layout {
       \context{

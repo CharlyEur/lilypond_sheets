@@ -325,8 +325,3 @@ trombone = \relative do {
   
   \bar "|."
 }
-
-sax = \relative do' {
-  \global
-  
-}

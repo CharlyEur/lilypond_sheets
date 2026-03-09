@@ -2,11 +2,12 @@
 \language "italiano"
 
 \header {
-  title = "Gloire au Christ, Parole éternelle"
+  title = "Gloire au Christ, Sagesse éternelle"
   composer = "Acclamation"
+  output-filename = "GloireAuChristSagesse"
 }
 
-\include "Music.ly"
+\include "Music_V2.ly"
 
 \book{
   \paper {
@@ -14,6 +15,10 @@
     right-margin = 20\mm
     top-margin = 20\mm
     bottom-margin = 20\mm
+  }
+
+  \header {
+    output-filename = "suite-full"
   }
   
   \score {

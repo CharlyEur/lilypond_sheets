@@ -2,39 +2,34 @@
 \language "italiano"
 
 \header {
-  title = "Gloria"
-  subtitle = "Messe de Saint-Boniface"
+  title = "Agnus"
+  subtitle = "Messe de Saint-Claude de la Colombière"
 }
 
 \include "Music.ly"
 
-global = {
-  \key sol \minor
-  \time 6/8
-}
-
 sopranoR = \new Staff \with {
   instrumentName = "Soprano"
   midiInstrument = "flute"
-} { \sopranoChorus \sopranoVerse }
+} { \sopranoVerse }
 
 altoR = \new Staff \with {
   instrumentName = "Alto"
   midiInstrument = "oboe"
-} { \altoChorus \altoVerse }
+} { \altoVerse }
 
 tenorR = \new Staff \with {
   instrumentName = "Tenor"
   midiInstrument = "trombone"
 } {
-  \clef bass \tenorChorus \tenorVerse
+  \clef bass \tenorVerse
 }
 
 bassR = \new Staff \with {
   instrumentName = "Basse"
   midiInstrument = "bassoon"
 } {
-  \clef bass \bassChorus \bassVerse
+  \clef bass \bassVerse
 }
 
 \book{
@@ -57,7 +52,7 @@ bassR = \new Staff \with {
       \override BreathingSign.text = \markup { \musicglyph "comma" }
     }
     \midi {
-      \tempo 4=108
+      \tempo 4=140
     }
   }
 }

@@ -7,7 +7,7 @@
   output-filename = "GloireAuChristSagesse"
 }
 
-\include "Music_V2.ly"
+\include "Music.ly"
 
 \book{
   \paper {

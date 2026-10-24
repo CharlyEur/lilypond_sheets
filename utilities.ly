@@ -10,6 +10,12 @@ forTrumpet = #(define-music-function (music) (ly:music?)
     #music
   #})
 
+forTrumpetBFlat = #(define-music-function (music) (ly:music?)
+  #{
+    \transpose sib do'
+    #music
+  #})
+
 forSaxophoneAlto = #(define-music-function (music) (ly:music?)
   #{
     \transpose mib do'

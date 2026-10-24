@@ -1,20 +1,10 @@
-\version "2.22.1"
-\language "italiano"
-
-\header {
-  title = "Notre Dieu s'est fait homme"
-}
 
 global = {
   \key mi \minor
   \time 6/8
 }
 
-sopranoR = \new Staff \with {
-  instrumentName = "Soprano"
-  midiInstrument = "choir aahs"
-} {
-  \relative do' {
+soprano = \relative do' {
     \global
     \repeat volta 2 {
       r8 mi fad sol fad mi
@@ -35,13 +25,8 @@ sopranoR = \new Staff \with {
       sol2.
     }
   }
-}
 
-altoR = \new Staff \with {
-  instrumentName = "Alto"
-  midiInstrument = "choir aahs"
-} {
-  \relative do' {
+alto = \relative do' {
     \global
     \repeat volta 2 {
       r8 si si mi si si
@@ -62,14 +47,8 @@ altoR = \new Staff \with {
       si2.
     }
   }
-}
 
-tenorR = \new Staff \with {
-  instrumentName = "Tenor"
-  midiInstrument = "choir aahs"
-} {
-  \clef bass
-    \relative do' {
+tenor = \relative do' {
     \global
     \repeat volta 2 {
       r8 sol la si la sol
@@ -90,14 +69,8 @@ tenorR = \new Staff \with {
       sol2.
     }
   }
-}
 
-bassR = \new Staff \with {
-  instrumentName = "Basse"
-  midiInstrument = "choir aahs"
-} {
-  \clef bass
-    \relative do {
+bass = \relative do {
     \global
     \repeat volta 2 {
       r8 mi mi mi mi mi
@@ -118,29 +91,3 @@ bassR = \new Staff \with {
       mi2.
     }
   }
-}
-
-\book{
-  \paper {
-    left-margin = 20\mm
-    right-margin = 20\mm
-    top-margin = 20\mm
-    bottom-margin = 20\mm
-  }
-  
-  \score {
-    \new StaffGroup <<
-      \sopranoR
-      \altoR
-      \tenorR
-      \bassR
-    >>
-    \layout { 
-      indent = 2\cm
-      \override BreathingSign.text = \markup { \musicglyph "comma" }
-    }
-    \midi {
-      \tempo 4=80
-    }
-  }
-}

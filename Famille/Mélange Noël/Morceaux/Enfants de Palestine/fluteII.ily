@@ -1,0 +1,4 @@
+fluteII = \relative do'' {
+    
+  \bar "|."
+}

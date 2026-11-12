@@ -57,7 +57,7 @@ staffSaxophoneinEb = \new Staff \with {
   shortInstrumentName = "Sax. Alto"
 } <<
     \transposition mib
-    \transpose do mib << \global \saxophone >>
+    \transpose mib do << \global \saxophone >>
   >>
 
 %%%%%%%%%% Cuivres %%%%%%%%%%%%
@@ -75,7 +75,7 @@ staffTrompetteIinBb = \new Staff \with {
   shortInstrumentName = "Trp.1"
 } <<
     \transposition sib
-    \transpose do sib << \global \trompetteI >>
+    \transpose sib do' << \global \trompetteI >>
   >>
 
 %% Trompette II
@@ -91,7 +91,7 @@ staffTrompetteIIinBb = \new Staff \with {
   shortInstrumentName = "Trp.2"
 } <<
     \transposition sib
-    \transpose do sib << \global \trompetteII >>
+    \transpose sib do' << \global \trompetteII >>
   >>
   
 %% Trombone
@@ -108,14 +108,14 @@ staffTubainC = \new Staff \with {
   instrumentName = "Tuba (en ut)"
   shortInstrumentName = "Tuba"
   midiInstrument = "tuba"
-} << \global \tuba >>
+} << \global \clef bass \tuba >>
 
 staffTubainBb = \new Staff \with {
   instrumentName = "Tuba  (en si♭)"
   shortInstrumentName = "Tuba"
 } <<
     \transposition sib
-    \transpose do sib << \global \tuba >>
+    \transpose sib do << \global \clef bass \tuba >>
   >>
 
 %%%%%%%%%% Guitares %%%%%%%%%%%%

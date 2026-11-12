@@ -67,3 +67,28 @@
     \midi { }
   }
 }
+
+\include "../Morceaux/Deck the Halls/principal.ily"
+\include "../Commun/staff-conductor.ily"
+
+\bookpart {
+  \header { subtitle = \title }
+  \score {
+    \staff-conductor
+    \layout { }
+    \midi { }
+  }
+}
+
+
+\include "../Morceaux/Enfants de Palestine/principal.ily"
+\include "../Commun/staff-conductor.ily"
+
+\bookpart {
+  \header { subtitle = \title }
+  \score {
+    \staff-conductor
+    \layout { }
+    \midi { }
+  }
+}

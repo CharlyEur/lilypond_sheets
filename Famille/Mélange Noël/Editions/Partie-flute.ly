@@ -34,7 +34,7 @@
 \bookpart {
   \header { piece = \title }
   \score {
-    \flute
+    \fluteI
     \layout { }
   }
 }

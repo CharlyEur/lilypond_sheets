@@ -1,5 +1,6 @@
 staff-conductor =
 <<
+  \new ChordNames { \italianChords \set noChordSymbol = "" \harmonies }
   \new StaffGroup
   <<
     \staffFluteI

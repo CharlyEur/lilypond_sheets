@@ -92,3 +92,42 @@
     \midi { }
   }
 }
+
+
+\include "../Morceaux/Feliz Navidad/principal.ily"
+\include "../Commun/staff-conductor.ily"
+
+\bookpart {
+  \header { subtitle = \title }
+  \score {
+    \staff-conductor
+    \layout { }
+    \midi { }
+  }
+}
+
+
+\include "../Morceaux/Good King Wenceslas/principal.ily"
+\include "../Commun/staff-conductor.ily"
+
+\bookpart {
+  \header { subtitle = \title }
+  \score {
+    \staff-conductor
+    \layout { }
+    \midi { }
+  }
+}
+
+
+\include "../Morceaux/Minuit Chrétien/principal.ily"
+\include "../Commun/staff-conductor.ily"
+
+\bookpart {
+  \header { subtitle = \title }
+  \score {
+    \staff-conductor
+    \layout { }
+    \midi { }
+  }
+}

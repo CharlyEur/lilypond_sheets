@@ -1,4 +1,4 @@
-fluteI = \relative do'' {
+fluteI = \relative do''' {
   la8 la do la si4 la8 sol
   sol4 fad8 mi mi4 r8 si
   mi8 mi fad sol sol do, r8 do

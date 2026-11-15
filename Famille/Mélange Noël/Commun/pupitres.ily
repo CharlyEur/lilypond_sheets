@@ -155,3 +155,9 @@ staffPercussions = \new Staff \with {
   shortInstrumentName = "Perc."
   midiInstrument = "drums"
 } << \global \percussions >>
+
+%%%%%%%%%% Accords %%%%%%%%%%%%
+
+%% Harmonies
+
+harmonies = \accords

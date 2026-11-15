@@ -1,0 +1,5 @@
+basson = \relative do {
+
+  
+  \bar "|."
+}

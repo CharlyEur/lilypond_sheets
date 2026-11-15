@@ -1,4 +1,4 @@
-hautbois = \relative do' {
+hautbois = \relative do'' {
   do8 do mi fad sol4 mi
   mi4 re8 do si4. si8
   sol8 sol la si do do r8 do
@@ -16,7 +16,7 @@ hautbois = \relative do' {
   
   %p2
   mi8. mi16 mi8 mi mi mi do do
-  do4 do8 re mi4 r8 si
+  do4 do8 re mi4 r8 sib
   do8 do fa do sol' fad mi4
   sol4 fad sol r4
   

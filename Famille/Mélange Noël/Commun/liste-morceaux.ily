@@ -9,4 +9,6 @@
      "NoelNouvelet"
      "Les anges dans nos campagnes"
      "Noel Blanc"
-     "Jingle Bell Rock"))
+     "Jingle Bell Rock"
+     "Petit Garçon"
+     "Le petit renne au nez rouge"))

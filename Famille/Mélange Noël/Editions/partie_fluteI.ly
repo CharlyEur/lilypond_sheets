@@ -26,8 +26,8 @@
   }
 }
 
-\include "../Editions/liste-morceaux.ily"
-\include "../Editions/recueil.ily"
+\include "../Commun/liste-morceaux.ily"
+\include "../Commun/recueil.ily"
 
 \header { title = "Mélange Noël" }
 

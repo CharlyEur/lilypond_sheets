@@ -11,4 +11,7 @@
      "Noel Blanc"
      "Jingle Bell Rock"
      "Petit Garçon"
-     "Le petit renne au nez rouge"))
+     "Le petit renne au nez rouge"
+     "Vive le vent"
+     "Mon beau sapin"
+     "Entre le boeuf et l'âne gris"))

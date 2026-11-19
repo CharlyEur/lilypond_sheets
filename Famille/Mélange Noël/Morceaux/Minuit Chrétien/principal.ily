@@ -6,7 +6,7 @@ composer = "A. Adam"
 
 \include "hautbois.ily"
 \include "basson.ily"
-%\include "tuba.ily"
+\include "tuba.ily"
 \include "accords.ily"
 
 \include "../../Commun/pupitres.ily"

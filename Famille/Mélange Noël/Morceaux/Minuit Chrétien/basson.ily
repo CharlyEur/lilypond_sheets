@@ -21,7 +21,7 @@ basson = \relative do {
   sol4 fad8 sol4 la8 %:7
   si2.
   do4 sol8 mi4 sol8
-  mi4. mi4.
+  fa4. mi4.
   sol4 fad8 sol4 la8 %:7
   si2.
   do4 sol8 mi4 la8
@@ -30,24 +30,24 @@ basson = \relative do {
   la2.
   mi4 sol8 fa4 sol8 %:m
   mi2.
-  re2. %:m
-  r2.
-  la2. %:m
-  r2.
-  do2.
-  sol2. %:7
+  re4. mi8 fa sol %:m
+  do4. si
+  la4. ~ la8 do si %:m
+  la2.
+  sol4. la
+  si4. sol %:7
   fa2.
-  r2.
-  do'2.
-  sol2. %:7
+  R2.
+  do'4. ~ do4  si8
+  sol4. si %:7
   do2.
-  r2.
-  sol2. %:7
-  r2.
+  R2.
+  sol4 la8 si4 do8 %:7
+  re4. sol,
   do2.
-  r2.
+  sol4 mi8 sol4 mi8
   fa2.
   sol2. %:7
-  do,2.
+  do2.
   \bar "|."
 }

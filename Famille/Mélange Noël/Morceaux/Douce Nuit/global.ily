@@ -1,5 +1,5 @@
 global = {
-  \key mib \major
-  \time 3/4
-  \tempo "Andante" 4=90
+  \key do \major
+  \time 6/8
+  \tempo "Andante" 8=80
 }

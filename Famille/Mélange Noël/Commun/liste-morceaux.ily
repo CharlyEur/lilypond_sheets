@@ -14,4 +14,5 @@
      "Le petit renne au nez rouge"
      "Vive le vent"
      "Mon beau sapin"
-     "Entre le boeuf et l'âne gris"))
+     "Entre le boeuf et l'âne gris"
+     "Il est né le divin enfant"))

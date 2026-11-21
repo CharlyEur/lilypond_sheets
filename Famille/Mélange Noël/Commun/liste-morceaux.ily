@@ -15,4 +15,5 @@
      "Vive le vent"
      "Mon beau sapin"
      "Entre le boeuf et l'âne gris"
-     "Il est né le divin enfant"))
+     "Il est né le divin enfant"
+     "Allons bergers"))

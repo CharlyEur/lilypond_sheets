@@ -9,7 +9,7 @@
 %  short-indent = 1.5\cm
 %}
 
-\include "../Morceaux/NoelNouvelet/principal.ily"
+\include "../Morceaux/Noël Nouvelet/principal.ily"
 \include "../Commun/staff-conductor.ily"
 
 \header {
@@ -20,6 +20,7 @@
 
 \score {
   \staff-conductor
+  \midi { }
   \layout {
     \context {
       \Staff

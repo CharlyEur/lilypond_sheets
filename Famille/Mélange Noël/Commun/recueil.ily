@@ -2,14 +2,12 @@
    (format #f "
 \\include \"../Morceaux/~a/principal.ily\"
 \\include \"~a\"
-
-\\bookpart {
-  \\header { subtitle = \\title }
+  
   \\score {
+    \\header { piece = \\markup \\fontsize #3 \\bold \\title }
     \\staff-conductor
     \\layout {}
     \\midi {}
-  }
 }
 " nom contenu))
 

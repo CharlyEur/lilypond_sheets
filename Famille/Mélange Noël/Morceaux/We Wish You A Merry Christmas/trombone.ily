@@ -1,6 +1,6 @@
 trombone = \relative do {
   % p1
-  r4
+  \partial 4 r4
   R2. * 10
   do4 do8 re do sib
   

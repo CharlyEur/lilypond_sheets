@@ -1,6 +1,6 @@
 hautbois = \relative do'' {
   % p1
-  r4
+  \partial 4 r4
   R2. * 5
   
   re4 sib sib

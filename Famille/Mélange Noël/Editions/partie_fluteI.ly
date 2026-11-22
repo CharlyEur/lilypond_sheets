@@ -23,6 +23,7 @@
     \Score
     \override BarNumber.break-visibility = #end-of-line-invisible
     barNumberVisibility = #(every-nth-bar-number-visible 5)
+    \override NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
 

@@ -2,7 +2,7 @@
 \language "italiano"
 
 \header {
-  dedication = "à tous les cousins"
+  dedication = "à tous les crous-crous"
   title = "Mélange de la Nativité"
   subtitle = "Noëls traditionels et modernes entremêlés"
   composer = "Variés"
@@ -11,13 +11,7 @@
   tagline = "Vive la famille !"
 }
 
-\bookOutputName "conducteur"
-
-\paper {
-  #(set-paper-size "a3" 'landscape)
-  indent = 3\cm
-  short-indent = 1.5\cm
-}
+\bookOutputName "partie-trompetteI"
 
 \layout {
   \context {
@@ -29,17 +23,19 @@
     \Score
     \override BarNumber.break-visibility = #end-of-line-invisible
     barNumberVisibility = #(every-nth-bar-number-visible 5)
+    \override NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
 
-\include "../Morceaux/Minuit Chrétien/principal.ily"
-\include "../Commun/staff-conductor.ily"
+\include "../Commun/liste-morceaux.ily"
+\include "../Commun/recueil.ily"
 
-\bookpart {
-  \header { subtitle = \title }
-  \score {
-    \staff-conductor
-    \layout { }
-    \midi { }
-  }
-}
+\header { title = "Mélange Noël" }
+
+% --- DEBUG : affiche la chaîne qui sera injectée ---
+%#(display
+%  (apply string-append
+%         (map (lambda (n) (bloc-morceau "../Commun/staff-fluteI.ily" n))
+%              liste-morceaux)))
+
+#(inclure-morceaux "../Commun/staff-trompetteI.ily" liste-morceaux)

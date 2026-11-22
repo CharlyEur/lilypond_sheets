@@ -16,4 +16,5 @@
      "Good King Wenceslas"
      "Les anges dans nos campagnes"
      "Entre le boeuf et l'âne gris"
-     "Il est né le divin enfant"))
+     "Il est né le divin enfant"
+     "We wish you a merry Christmas"))

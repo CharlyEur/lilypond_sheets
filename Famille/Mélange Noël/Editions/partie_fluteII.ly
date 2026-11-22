@@ -23,11 +23,12 @@
     \Score
     \override BarNumber.break-visibility = #end-of-line-invisible
     barNumberVisibility = #(every-nth-bar-number-visible 5)
+    \override NonMusicalPaperColumn.page-break-permission = ##f
   }
 }
 
-\include "../Editions/liste-morceaux.ily"
-\include "../Editions/recueil.ily"
+\include "../Commun/liste-morceaux.ily"
+\include "../Commun/recueil.ily"
 
 \header { title = "Mélange Noël" }
 

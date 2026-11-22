@@ -1,0 +1,4 @@
+hautbois = \relative do' {
+   
+  \bar "|."
+}

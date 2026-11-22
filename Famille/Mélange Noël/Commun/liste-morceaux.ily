@@ -10,6 +10,8 @@
      "Vive le vent"
      "Le petit renne au nez rouge"
      "Mon beau sapin"
+     "Entre le boeuf et l'âne gris"
+     "All I Want for Christmas"
      "Allons bergers"
      "Minuit Chrétien"
      "Deck the Halls"

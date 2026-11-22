@@ -1,0 +1,4 @@
+tuba = \relative do {
+
+  \bar "|."
+}

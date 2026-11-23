@@ -6,4 +6,5 @@ global = {
 
 modulation = {
   \key lab \major
+  \bar "||"
 }

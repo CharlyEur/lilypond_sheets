@@ -35,17 +35,20 @@ fluteI = \relative do''' {
   sol4 fad8 mi mi4 ~ mi8 do
   
   \modulation
+    
+  lab8 \p lab sib do reb reb r reb
+  sib4 reb mib r4
   
-  fa8 fa sol lab lab reb, r8 reb
-  sol8 sol lab sib mib,4 r8 do
-  fa8 fa sol lab sib4 lab8 sol
-  sol4 sol8 fa sol4 r8 do,
-  fa8 fa sol lab lab reb, r reb
-  sol8 sol lab sib do do do do
-  sib8 lab sol fa lab4 do,8 do
-  lab'4 sol8 fa fa4 r8 do'
-  sib8 lab sol fa lab4 do,8 do
-  lab'4 sol8 fa fa2 \fermata
+  %p4
+  lab,8 lab sib do reb4 reb8 reb
+  r1
+  r8 lab sib do reb reb r reb
+  r2 lab8 sib do do
+  
+  fa2 fa4 do8 do
+  fa4 mib8 reb do2
+  fa2 fa4 do8 do
+  fa4 mib8 reb do2 \fermata
 
   \bar "|."
 }

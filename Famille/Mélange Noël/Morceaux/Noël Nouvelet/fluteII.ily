@@ -45,4 +45,6 @@ fluteII = \relative do'' {
   re4 re
   mi8 mi16 mi re8 re
   re2
+  
+  \bar "|."
 }

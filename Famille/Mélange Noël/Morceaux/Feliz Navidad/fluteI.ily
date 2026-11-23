@@ -1,6 +1,6 @@
 fluteI = \relative do'' {
   % p1
-  r1
+  R1
   r8 si16 si si8 la si8 si4 la8 ~
   la4 r r2
   r4 la8 sol fad8 mi4 re8

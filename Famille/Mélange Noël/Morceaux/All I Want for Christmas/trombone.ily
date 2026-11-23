@@ -60,98 +60,100 @@ trombone = \relative do {
   r4 do8 do r4 do8 do
   r4 mib8 mib r4 mib8 mib
   
-  r4 sol8 sol r4 sol8 sol
-  r4 mi8 mi r4 mi8 mi
-  r4 do8 do r4 do8 do
-  
-  % p3
-  r8 re re re re re re4
-  r4 sol8 sol r4 sol8 sol
-  r4 sol8 sol r4 sol8 sol
-  r4 sol8 sol r4 sol8 sol
-  r8 sol8 r sol r sol r sol
-  
-  r4 do,8 do r4 do8 do
-  r4 do8 do r4 do8 do
-  r4 mib8 mib r4 mib8 mib
-  r4 mib8 mib r4 mib8 mib
-  
-  r4 sol8 sol r4 sol8 sol
-  r4 sol8 sol r4 sol8 sol
-  r4 sol8 sol r4 sol8 sol
-  r8 sol8 r sol r sol r sol
-  
-  r4 do,8 do r4 do8 do
-  r4 do8 do r4 do8 do
-  r4 mib8 mib r4 mib8 mib
-  r4 mib8 mib r4 mib8 mib
-  
-  r4 re8 re r4 re8 re
-  r4 re8 re r4 red8 red
-  r4 mi8 mi r4 mi8 mi
-  r4 mi8 mi r4 mib8 mib
-  
-  r4 re8 re r4 re8 re
-  r4 mi8 mi r4 mi8 mi
-  r4 do8 do r4 do8 do
-  r4 mib8 mib r4 mib8 mib
-  
-  % p4
-  r4 sol8 sol r4 sol8 sol
-  r4 mi8 mi r4 mi8 mi
-  r4 do8 do r4 do8 do
-  
-  r4 re8 re r4 re8 re
-  r4 fad8 fad r4 fad8 fad
-  r8 fad r fad r fad r fad
-  r4 mi8 mi r4 mi8 mi
-  
-  r4 mi8 mi r4 mi8 mi
-  r4 fad8 fad r4 fad8 fad
-  r8 fad r fad r fad r fad
-  r4 mi8 mi r4 mi8 mi
-  
-  r4 mi8 mi r4 mi8 mi
-  r4 mib8 mib r4 mib8 mib  
-  r4 mib8 mib r4 mib8 mib  
-  r4 sol8 sol r4 sol8 sol
+  \repeat volta 2 {
+    r4 sol8 sol r4 sol8 sol
+    r4 mi8 mi r4 mi8 mi
+    r4 do8 do r4 do8 do
     
-  r4 sold8 sold r4 sold8 sold
-  r4 la8 la r4 la8 la
-  r4 la8 la r4 la8 la
-  r4 re,8 re r4 re8 re
-  
-  r4 re8 re r4 re8 re  
-  r4 sol8 sol r4 sol8 sol  
-  r4 sol8 sol r4 sol8 sol  
-  r4 sol8 sol r4 sol8 sol
-  r8 sol r sol r sol r sol
-  
-  % p5
-  r4 do,8 do r4 do8 do
-  r4 mi8 mi r4 mi8 mi
-  r4 mib8 mib r4 mib8 mib  
-  r4 mib8 mib r4 mib8 mib  
-  
-  r4 re8 re r4 re8 re
-  r4 re8 re r4 red8 red
-  r4 mi8 mi r4 mi8 mi
-  r4 mi8 mi r4 mib8 mib
-  
-  r4 re8 re r4 re8 re
-  r4 mi8 mi r4 mi8 mi
-  r4 do8 do r4 do8 do
-  mib4 mib2 mib4 ~
-  mib4 mib2 mib4
-  
-  r8 re' re re re re re4
-  r4 sol,8 sol r4 sol8 sol
-  
-  r4 do,8 do r4 do8 do
-  r4 re8 re r4 re8 re
-  r4 sol8 sol r4 sol8 sol
-  r4 mi8 mi r4 mi8 mi
-  
+    % p3
+    r8 re re re re re re4
+    r4 sol8 sol r4 sol8 sol
+    r4 sol8 sol r4 sol8 sol
+    r4 sol8 sol r4 sol8 sol
+    r8 sol8 r sol r sol r sol
+    
+    r4 do,8 do r4 do8 do
+    r4 do8 do r4 do8 do
+    r4 mib8 mib r4 mib8 mib
+    r4 mib8 mib r4 mib8 mib
+    
+    r4 sol8 sol r4 sol8 sol
+    r4 sol8 sol r4 sol8 sol
+    r4 sol8 sol r4 sol8 sol
+    r8 sol8 r sol r sol r sol
+    
+    r4 do,8 do r4 do8 do
+    r4 do8 do r4 do8 do
+    r4 mib8 mib r4 mib8 mib
+    r4 mib8 mib r4 mib8 mib
+    
+    r4 re8 re r4 re8 re
+    r4 re8 re r4 red8 red
+    r4 mi8 mi r4 mi8 mi
+    r4 mi8 mi r4 mib8 mib
+    
+    r4 re8 re r4 re8 re
+    r4 mi8 mi r4 mi8 mi
+    r4 do8 do r4 do8 do
+    r4 mib8 mib r4 mib8 mib
+    
+    % p4
+    r4 sol8 sol r4 sol8 sol
+    r4 mi8 mi r4 mi8 mi
+    r4 do8 do r4 do8 do
+    
+    r4 re8 re r4 re8 re
+    r4 fad8 fad r4 fad8 fad
+    r8 fad r fad r fad r fad
+    r4 mi8 mi r4 mi8 mi
+    
+    r4 mi8 mi r4 mi8 mi
+    r4 fad8 fad r4 fad8 fad
+    r8 fad r fad r fad r fad
+    r4 mi8 mi r4 mi8 mi
+    
+    r4 mi8 mi r4 mi8 mi
+    r4 mib8 mib r4 mib8 mib  
+    r4 mib8 mib r4 mib8 mib  
+    r4 sol8 sol r4 sol8 sol
+      
+    r4 sold8 sold r4 sold8 sold
+    r4 la8 la r4 la8 la
+    r4 la8 la r4 la8 la
+    r4 re,8 re r4 re8 re
+    
+    r4 re8 re r4 re8 re  
+    r4 sol8 sol r4 sol8 sol  
+    r4 sol8 sol r4 sol8 sol  
+    r4 sol8 sol r4 sol8 sol
+    r8 sol r sol r sol r sol
+    
+    % p5
+    r4 do,8 do r4 do8 do
+    r4 mi8 mi r4 mi8 mi
+    r4 mib8 mib r4 mib8 mib  
+    r4 mib8 mib r4 mib8 mib  
+    
+    r4 re8 re r4 re8 re
+    r4 re8 re r4 red8 red
+    r4 mi8 mi r4 mi8 mi
+    r4 mi8 mi r4 mib8 mib
+    
+    r4 re8 re r4 re8 re
+    r4 mi8 mi r4 mi8 mi
+    r4 do8 do r4 do8 do
+    mib4 mib2 mib4 ~
+    mib4 mib2 mib4
+    
+    r8 re' re re re re re4
+    r4 sol,8 sol r4 sol8 sol
+  }
+  \repeat volta 2 {
+    r4 do,8 do r4 do8 do
+    r4 re8 re r4 re8 re
+    r4 sol8 sol r4 sol8 sol
+    r4 mi8 mi r4 mi8 mi
+  }
   
   \bar "|."
 }

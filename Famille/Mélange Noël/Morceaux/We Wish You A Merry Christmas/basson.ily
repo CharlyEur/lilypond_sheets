@@ -1,6 +1,6 @@
 basson = \relative do' {
   % p1
-  r4
+  \partial 4 r4
   sib2.
   mib,2.
   do'2.
@@ -69,4 +69,6 @@ basson = \relative do' {
   R2.
   sib2. ~
   sib2.
+  
+  \bar "|."
 }

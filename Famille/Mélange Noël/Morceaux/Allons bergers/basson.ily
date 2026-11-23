@@ -25,4 +25,5 @@ basson = \relative do {
   si4 la re sol,
   la2 re
   
+  \bar "||"
 }

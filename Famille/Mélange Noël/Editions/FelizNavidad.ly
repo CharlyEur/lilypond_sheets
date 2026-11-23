@@ -4,16 +4,16 @@
 \bookOutputName "conducteur-feliz-navidad"
 
 \include "../Morceaux/Feliz Navidad/principal.ily"
-\include "../Commun/staff-conductor-instruments.ily"
+\include "../Commun/staff-conductor.ily"
 
 \header {
   title = \title
+  subtitle = "Conducteur"
   composer = \composer
-  arranger = \arranger
 }
 
 \score {
-  \staff-conductor-instruments
+  \staff-conductor
   \layout {
     \compressEmptyMeasures
     \context {

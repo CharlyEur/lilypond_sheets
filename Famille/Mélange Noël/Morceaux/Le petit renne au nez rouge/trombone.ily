@@ -4,7 +4,11 @@ trombone = \relative do' {
   do2 si
   la2 sol4 r
   la2 sol
+  
+  \time 2/4  
   la2
+  
+  \time 4/4  
   do2 r
   
   do4 si la sol8 la ~
@@ -31,6 +35,8 @@ trombone = \relative do' {
   % p2
   re8 re si do re4 fa
   mi2. r4
+  \bar "||"
+  
   do4 do re8 do ~ do4
   do4 re8 do ~ do2
   do4 do la la8 sol ~
@@ -49,4 +55,6 @@ trombone = \relative do' {
   si4 si2 r4
   re8 re si do si4 fa'  
   mi2 r
+  
+  \bar "|."
 }

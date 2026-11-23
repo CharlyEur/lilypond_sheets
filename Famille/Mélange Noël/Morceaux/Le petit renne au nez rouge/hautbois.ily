@@ -4,7 +4,11 @@ hautbois =  \relative do'' {
   la2 sol
   fa2 \tuplet 3/2 {fa4 mi r}
   fa2 re
+  
+  \time 2/4
   do2
+  
+  \time 4/4  
   mi2 r2
   
   mi4 re do do8 do ~
@@ -30,7 +34,8 @@ hautbois =  \relative do'' {
   
   % p2
   fa8 fa fa mi fa4 sol
-  sol2. r4
+  sol2. r4 \bar  "||"
+  
   fa4 fa fa8 fa ~ fa4
   mi4 sol8 mi ~ mi2
   re8 mi fa4 re re8 do ~
@@ -50,4 +55,5 @@ hautbois =  \relative do'' {
   fa8 fa fa mi mi4 sol
   sol2 r
   
+  \bar "|."  
 }

@@ -4,7 +4,11 @@ basson = \relative do' {
   fa2 mi
   re2 do4 r
   re2 mi
+  
+  \time 2/4  
   fa2
+  
+  \time 4/4  
   sol2 r
   
   R1
@@ -30,7 +34,8 @@ basson = \relative do' {
   
   % p2
   sol4 la lad si
-  do4 si la sol
+  do4 si la sol \bar "||"
+  
   fa4 sol la fa
   do'4 si do mi
   re4 do si sol

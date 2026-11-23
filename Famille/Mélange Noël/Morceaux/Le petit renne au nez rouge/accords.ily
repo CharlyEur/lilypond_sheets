@@ -48,4 +48,6 @@ accords = \chordmode{
   sol1
   sol1:7
   do1
+  
+  \bar "|."
 }

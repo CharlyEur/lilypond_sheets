@@ -33,8 +33,8 @@ basson = \relative do {
   
   % p3
   la8 mi' sol4 mi,8 si' sol'4
-  fad,4 si, mi8 la, sol4
-  do8 do'4 do8 do, do'4 do8
+  fad,4 si mi8 la, sol4
+  do,8 do'4 do8 do, do'4 do8
   do,8 do'4 do8 do, do'4 do8
     
   do,8 do'4 do8 do, do'4 do,8

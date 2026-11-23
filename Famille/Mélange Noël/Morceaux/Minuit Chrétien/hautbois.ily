@@ -1,5 +1,5 @@
 hautbois = \relative do' {
-  mi8
+  \partial 8 mi8
   mi4. ~ mi4 mi8
   sol4. ~ sol4 sol8
   la4 la8 fa4 la8

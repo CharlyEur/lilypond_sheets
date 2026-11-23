@@ -46,19 +46,16 @@ hautbois = \relative do'' {
   
   \modulation
   
-  lab8 lab sib do reb reb r reb
-  sib4 reb mib r4
-  
-  %p4
-  lab,8 lab sib do reb4 reb8 reb
-  r1
-  r8 lab sib do reb reb r reb
-  r2 lab8 sib do do
-  
-  fa2 fa4 do8 do
-  fa4 mib8 reb do2
-  fa2 fa4 do8 do
-  fa4 mib8 reb do2 \fermata
+  fa8 \f fa sol lab lab reb, r8 reb
+  sol8 sol lab sib mib,4 r8 do
+  fa8 fa sol lab sib4 lab8 sol
+  sol4 sol8 fa sol4 r8 do,
+  fa8 fa sol lab lab reb, r reb
+  sol,8 sol lab sib do do do do
+  sib8 lab sol fa lab4 do,8 do
+  lab'4 sol8 fa fa4 r8 do'
+  sib8 lab sol fa lab4 do,8 do
+  lab'4 sol8 fa fa2 \fermata
 
   \bar "|."
 }

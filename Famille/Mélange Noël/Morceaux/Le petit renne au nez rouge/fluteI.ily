@@ -4,9 +4,11 @@ fluteI = \relative do'' {
   \tuplet 3/2 {do4 la fa} \tuplet 3/2 {si4 sol mi}
   \tuplet 3/2 {la4 fa re} \tuplet 3/2 {la'4 sol r}
   \tuplet 3/2 {do4 la fa} \tuplet 3/2 {si4 sol mi}
+  
   \time 2/4
   \tuplet 3/2 {la4 fa re}
   \time 4/4
+  
   \tuplet 3/2 {la'4 sol2} r2
 
   mi4 mi mi mi8 mi ~

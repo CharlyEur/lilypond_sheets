@@ -1,4 +1,4 @@
-fluteI = \relative do'' {
+fluteI = \relative do' {
   % p1
   \partial 4 fa4
   sib4 sib8 do sib la
@@ -16,7 +16,7 @@ fluteI = \relative do'' {
   re'4 re8 mib re do
   sib4 sol sol8 fa
   sol4 do la
-  sib4 r fa,
+  sib4 r fa
   sib4 sib8 do sib la
   sol4 sol sol
   do4 do8 re do sib
@@ -34,7 +34,7 @@ fluteI = \relative do'' {
   % p2
   fa'4 fa, fa8 fa
   sol4 do la
-  sib4 r fa'
+  sib4 r fa
   sib4 sib8 do sib la
   sol4 sol sol
   do4 do8 re do sib
@@ -55,7 +55,7 @@ fluteI = \relative do'' {
   sol4 sol sol
   do4 do8 re do sib
   la4 fa fa
-  re4 re8 mib re do
+  re'4 re8 mib re do
   sib4 sol sol8 fa
   sol4 do la
   sib4 r2 

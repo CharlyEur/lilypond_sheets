@@ -9,6 +9,7 @@
   arranger = "Basile Garapon"
   copyright = "Bhathlalé"
   tagline = "Vive la famille !"
+  instrument = "Flûte II"
 }
 
 \bookOutputName "partie-fluteII"
@@ -18,6 +19,7 @@
     \Staff
     \RemoveEmptyStaves
     \override VerticalAxisGroup.remove-first = ##t
+    \omit InstrumentName
   }
   \context {
     \Score

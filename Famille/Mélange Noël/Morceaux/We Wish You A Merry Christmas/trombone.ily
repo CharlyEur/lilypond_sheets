@@ -49,4 +49,6 @@ trombone = \relative do {
   re16 fa sib re r2
   r4 fa,2 ~
   fa2.
+  
+  \bar "|."
 }

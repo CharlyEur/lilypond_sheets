@@ -5,6 +5,7 @@
   dedication = "à tous les crous-crous"
   title = "Mélange de la Nativité"
   subtitle = "Noëls traditionels et modernes entremêlés"
+  instrument = "Trompette II"
   composer = "Variés"
   arranger = "Basile Garapon"
   copyright = "Bhathlalé"
@@ -18,6 +19,7 @@
     \Staff
     \RemoveEmptyStaves
     \override VerticalAxisGroup.remove-first = ##t
+    \omit InstrumentName
   }
   \context {
     \Score

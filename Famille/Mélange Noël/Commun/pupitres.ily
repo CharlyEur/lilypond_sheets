@@ -115,7 +115,7 @@ staffTubainBb = \new Staff \with {
   shortInstrumentName = "Tuba"
 } <<
     \transposition sib
-    \transpose sib do << \global \clef bass \tuba >>
+    \transpose sib do' << \global \clef bass \tuba >>
   >>
 
 %%%%%%%%%% Guitares %%%%%%%%%%%%

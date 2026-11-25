@@ -45,4 +45,6 @@ fluteTenor = \relative do' {
   sol8 la sib do
   do4 sib
   sib2
+  
+  \bar "|."
 }

@@ -35,7 +35,7 @@
 \include "../Commun/liste-morceaux.ily"
 \include "../Commun/recueil.ily"
 
-\header { title = "Mélange Noël" subtitle = "Nouveau conducteur" }
+\header { title = "Mélange Noël" subtitle = "Conducteur" }
 
 % --- DEBUG : affiche la chaîne qui sera injectée ---
 %#(display

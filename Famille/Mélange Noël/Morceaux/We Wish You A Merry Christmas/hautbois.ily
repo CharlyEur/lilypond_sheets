@@ -64,4 +64,5 @@ hautbois = \relative do'' {
   r2 re4 ~
   re2.
   
+  \bar "|."
 }

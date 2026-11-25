@@ -4,7 +4,11 @@ basson = \relative do' {
   fa2 mi
   re2 do4 r
   re2 mi
+  
+  \time 2/4  
   fa2
+  
+  \time 4/4
   sol2 r
   
   R1

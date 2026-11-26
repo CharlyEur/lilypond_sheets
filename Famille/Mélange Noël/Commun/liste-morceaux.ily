@@ -18,4 +18,5 @@
      "Good King Wenceslas"
      "Les anges dans nos campagnes"
      "Il est né le divin enfant"
-     "We wish you a merry Christmas"))
+     "We wish you a merry Christmas"
+     "Peuple Fidèle"))
